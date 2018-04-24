@@ -1,4 +1,4 @@
-# Zircle UI - Documentation
-The official documentation site for Zircle UI. 
+# Zircle UI - Docs
+The official documentation site for Zircle UI powered by [vuepress](https://vuepress.vuejs.org)
 
-**WIP:** Migrate the official docs using Vuepress
+Checkout the beta at [https://zircleui.github.io/docs/](https://zircleui.github.io/docs/)

@@ -14,16 +14,17 @@ module.exports = {
     ['meta', { name: 'application-name', content: 'Zircle UI Docs' }],
     ['meta', { name: 'msapplication-TileColor', content: '#2d89ef' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['link', { rel: 'stylesheet', href: `//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css` }]
+    ['link', { rel: 'stylesheet', href: `https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css` }]
   ],
   ga: 'UA-108782619-1',
   serviceWorker: true,
   theme: 'zircle',
   themeConfig: {
     logo: '/icons/apple-touch-icon.png',
-    repo: 'zircleui/docs',
-    editLinks: true,
+    repo: 'zircleUI/zircleUI',
+    docsRepo: 'zircleUI/docs',
     docsDir: 'docs',
+    editLinks: true,
     nav: [
       {
         text: 'Guide',
