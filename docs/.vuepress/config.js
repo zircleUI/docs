@@ -25,6 +25,10 @@ module.exports = {
     docsRepo: 'zircleUI/docs',
     docsDir: 'docs',
     editLinks: true,
+    algolia: {
+      apiKey: '29089c5b9bf92344538cb47b2c1dcaba',
+      indexName: 'zircle'
+    },
     nav: [
       {
         text: 'Guide',
