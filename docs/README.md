@@ -1,17 +1,17 @@
 ---
 home: true
 pageClass: home
-heroImage: /zircle.gif
+heroImage: /zircle_light.svg
 actionText: Github
-actionLink: /guide/
+actionLink: https://github.com/zircleUI/zircleUI
 actionText1: Get Started
-actionLink1: /guide/
+actionLink1: /guide/introduction
 features:
-- title: Zoomable navigation
-  details: Enjoy a different User Experience to navigate your app. Zircle has 6 levels of depth to organize the content.
-- title: Circular UI
-  details: Zircle comes with a minimal set of circular UI components to build your app. It is possible to customize themes and styles to fit your needs.
+- title: Zoomable UI/UX
+  details: Enjoy a different UI/UX with the in-built zoomable navigation - ZUI/UX.
+- title: Circles everywhere
+  details: Breaking away from the conventional UI with a circular UI Kit and customize themes and styles.
 - title: Responsive
-  details: Zircle works pretty well on mobile devices and big screens
+  details: Zircle works pretty well on mobile devices and big screens.
 footer: MIT Licensed | Copyright © 2017-present Juan Martín Muda
 ---

@@ -20,7 +20,7 @@ module.exports = {
   serviceWorker: true,
   theme: 'zircle',
   themeConfig: {
-    logo: '/icons/apple-touch-icon.png',
+    logo: '/icons/android-chrome-256x256.png',
     repo: 'zircleUI/zircleUI',
     docsRepo: 'zircleUI/docs',
     docsDir: 'docs',
