@@ -14,7 +14,7 @@ module.exports = {
     ['meta', { name: 'application-name', content: 'Zircle UI Docs' }],
     ['meta', { name: 'msapplication-TileColor', content: '#2d89ef' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['link', { rel: 'stylesheet', href: `https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css` }]
+    ['script', { src: 'https://use.fontawesome.com/releases/v5.0.10/js/all.js', crossorigin: 'anonymous' }]
   ],
   ga: 'UA-108782619-1',
   serviceWorker: true,
