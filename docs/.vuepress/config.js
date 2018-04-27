@@ -13,8 +13,7 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-title', content: 'Zircle UI Docs' }],
     ['meta', { name: 'application-name', content: 'Zircle UI Docs' }],
     ['meta', { name: 'msapplication-TileColor', content: '#2d89ef' }],
-    ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['script', { src: 'https://use.fontawesome.com/releases/v5.0.10/js/all.js', crossorigin: 'anonymous' }]
+    ['meta', { name: 'theme-color', content: '#ffffff' }]
   ],
   ga: 'UA-108782619-1',
   serviceWorker: true,
