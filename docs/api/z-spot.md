@@ -7,10 +7,10 @@ sidebarDepth: 2
 ## Description
 <img :src="$withBase('/z-view.png')" style="clear: right; margin-top: 20px; float:right" width="250px"/>
 
-By default this component allows to zoom-in to a new view. In other words is a zoomable component to go to another view using zoomable navigation. As happenss with `z-view` you can nest others [z-spot](#z-spot) or [z-dialog](#z-dialog). Currently, `z-list` is not available for `z-spot`  
+By default this component allows to zoom-in to a new view. In other words is a zoomable component to go to another view. Inside a `z-spot` you can nest other [z-spot](#z-spot). Currently, `z-list` is not available for `z-spot`  
 
 ### Zoom-in to a new view 
-By default, `z-spot` is made to perform a zoom transition to another view. You need to use the property `to-view` indicating the name of the view you want to go. Also, is it possble to define params that work with or without vue-router.
+By default, `z-spot` is made to perform a zoom transition to another view. You need to use the property `to-view` indicating the name of the view you want to go. Also, is it possble to pass params that work with or without vue-router.
 
 If you want to point a view to go, simply use `to-view` as `string` with the view name (it is not case sensible). In case, you need to pass some params it is necesary to use an `object` in `to-view` as follows:
 
@@ -18,9 +18,8 @@ If you want to point a view to go, simply use `to-view` as `string` with the vie
 to-view: "{ 
 	name: 'device', 
 	params: { 
-		id: id,
-		type: type,
-		other-param: value
+		key: value,
+		key: value
 	}
 }"
 ```
@@ -28,7 +27,7 @@ to-view: "{
 Then in the target view, you can retrieve the params using `$zircle.getParams()`
 
 ### Positioning
-`z-spot` is placed taking into account its parent component. Having that in mind, you need to use two properties: `angle` and `distance`.
+`z-spot` is positionated taking into account its parent component (a `z-view`or a `z-spot`). Having that in mind, you need to use two properties: `angle` and `distance`.
 
 To precise an `angle` put any value between 0 and 360 degrees (also, could be a negative degree). See the diagram provided.
 
@@ -44,21 +43,21 @@ By default the diameter of the `z-spot` is `medium`. To change it, simply use th
 - `xs`, 
 - `xxs`
 
-### Play as button
-This component can mutate its default behaviour to play as `button`. To enabled it set the property `button` as `true`.
-Take into account that proerty `to-view` is disebled when `button` is active.
+### z-spot as button
+This component can mutate its default behaviour to run as `button`. To enabled it set the property `button` as `true`.
+> Take into account that property `to-view` is disabled when `button` is active. (no yet)
 
-In addition, you should add a [vue event](https://vuejs.org/v2/guide/events.html) when `button`is pressed.
+In addition, you should add a [vue event](https://vuejs.org/v2/guide/events.html) when `button` is pressed.
 
-### Play as range knob
+### z-spot as knob
 
-As happen with `button`, `z-spot`  can be a `range knob`. As its name suggests this component displays an interactive circular progress bar with a circular handler. Usefull to create controls like volume, dimmers, etc.
+As happen with `button`, `z-spot`  can be a `knob`. As its name suggests this component displays an interactive circular progress bar with a circular handler. Usefull to create controls like volume, dimmers, etc.
 
-To enabled it set the property `knob` as `true` and optionally provide its initial value using the property `progress`.
+To enabled it set the property `knob` as `true` and optionally provide its initial value using the property `qty`.
 
-By default the `z-knob` has a range of 0-100 and show the current value in its label. You may need to the range values, unit displayed and where to show the current value. 
+By default the `z-knob` has a range of 0-100 and show the current value in its label. 
 
-In this case, you can config that using the property progess as an `object`.
+You may need to the range values, unit displayed and where to show the current value. In that case, you can pass an `object`.
 
 ```html
 <z-spot
@@ -73,37 +72,40 @@ In this case, you can config that using the property progess as an `object`.
 ```
 
 ### Organize your content
-As happens with `z-view`, in a `z-spot` you can place different kind of contents. However media is not available because the view size is smaller.????
+As happens with `z-view`, in a `z-spot` you can place different kind of contents. However media is not available.
 
 #### slot.default
-Tipically, the content you put inside a `z-spot` will be catched by a default Vue slot. In case the content is larger than the view container, it will be hiddem. 
+Tipically, the content you put inside a `z-spot` will be catched by a default Vue slot. In case the content is larger than the view container, it will be hidden. 
 
 #### slot.extension
-This slot allows to nest other zircle components. If you want to add just one element add the slot name in the element. In case you need to add more elemntes, you can create a wrap element with the slot name.
+This slot allows to nest other **zircle ui** components. If you want to add just one element add the slot name in the element. In case you need to add more elementes, you can create a wrap element with the slot name.
 
 #### property imagePath
 In case you want to add an image background `z-view` offers two options: the **`slot.image`** or the property **`imagePath`**.
 
 #### property.label
-Finally, it is possible to add a label to `z-spot` that could be positionated in the top, left, right or botton of the `z-spot`. When you use the property **`label`** the default position is the bottom of the `z-spot`. If you want put the label in a different place, use the property **`labelPos`** with your prefered value: 'top', 'left', 'bottom', 'right'
-BORRAR LABEL SLOT 
+Finally, it is possible to add a label to `z-spot` that could be positionated in the top, left, right or botton of the `z-spot`. When you use the property **`label`** the default position is the bottom of the `z-spot`. 
+
+#### property.labelPos
+If you want put the label in a different place, use the property **`labelPos`** with your prefered value: 'top', 'left', 'bottom', 'right'
+
 
 ### Content layers
 <img :src="$withBase('/z-view-order.png')" style="clear: right; margin-top: 20px; float:right" width="250px"/>
 
-On the left you can see a diagram to show how the content is placed. The `slot.image` is on the bottom, then the `slot.default`, followed by the `slot.media` and the `slot.extension`. 
+On the right you can see a diagram to show how the content is placed. The `slot.image` is on the bottom, then the `slot.default`, and the `slot.extension`. 
 
 ### Extras
-`z-spot` has a child component named `z-slider` that allow to show a circular progress bar around its perimeter. You need to set `true` the property `slider` and use the property `progress` with a value. OJO DEBERIA SER LO MISMO QUE RANGE.....
+`z-spot` has a child component named `z-slider` that allow to show a circular progress bar around its perimeter. You need to set `true` the property `slider` and use the property `progress` with a value. 
 
 ### Caveats
-Currently, `z-spot`doesn't have `slot.media` so is not possible to add rich media (however you can put rich media using `slot.default`). 
+- Currently, `z-spot` doesn't have `slot.media` so is not possible to add rich media (however you can put rich media using `slot.default`). 
 
-Also, if the content is larger than the `z-spot` container, it won't be scrollable. 
+- Also, if the content is larger than the `z-spot` container, it won't be scrollable. 
 
-Finally, you can't nest a `z-list` component inside a `z-spot`.
+- Finally, you can't nest a `z-list` component inside a `z-spot`.
 
-The idea behind `z-spot` is that it should be a component to perform a transition to another view that by design doesn't have any of the above caveats. Having said that, all this limitations may be overcome in further releases.
+- The idea behind `z-spot` is that it should be a component to perform a transition to another view that by design doesn't have any of the above caveats. Having said that, all this limitations may be overcome in further releases.
 
 ::: tip
 `z-scale` is the viewport of the next view. So, when you design a view and include a `z-scale` maybe is good to provide some hints of what it will see next. 

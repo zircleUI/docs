@@ -5,12 +5,12 @@ sidebarDepth: 2
 # z-dialog
 
 ## Description
-This component show a dialog on the top of any zircle component when is invoked. Inside it you can nest only `<z-spot>` components. In further realeases this could be extended to another zircle components.
+This component show a dialog on the top of any **zircle ui** component when is invoked. Inside it you can nest only `<z-spot>` components. In further realeases this could be extended to another **zircle ui** components.
 
 By default, `z-dialog` will be open until the user manually closed it. 
 
 ### Self close dialog
-However it is possible to add the property `selfClose` and in this case the `z-dialog` will be closed after 3 seconds when a circular `z-slider` is completed and the `zidialog`event `done` is triggered. Tis is done by a vue `$emit` so, in you dialog you have to tell that on done is emitted, athe dialog close.
+However it is possible to add the property `selfClose` and in this case the `z-dialog` will be closed after 3 seconds when a circular `z-slider` is completed and the `z-dialog` event `done` is triggered. This is done by a vue `$emit`.
 
 ```html
 <z-dialog 
@@ -21,7 +21,7 @@ However it is possible to add the property `selfClose` and in this case the `z-d
 ```
 
 ## Usage
-In you view's Vuw instance add `$data.dialog`  (or your prefered name) and set it to `false`. This way the `z-dialog` is not rendered. When dialog is set `true` the dialog will be rendered until the user closed it or self closed if it enabled.
+In you view's Vue instance add `$data.dialog` (or your prefered name) and set it to `false`. This way the `z-dialog` is not rendered. When dialog is set `true` the dialog will be rendered until the user closed it or self closed if it is enabled.
 
 ```js
 /* ... */

@@ -5,13 +5,13 @@ sidebarDepth: 2
 # z-canvas
 
 ## Description
-This component is a wrapper and provides the frame to develop your project. All your zircle's components needs to be inside `z-canvas`.
+This component is a wrapper and provides the "frame" to develop your project. All your zircle's components needs to be inside `z-canvas`.
 
 ### View management
-`z-canvas` has just one property called `views` that passes your views to the child component `z-view-manager` that controls how views are displayed. To achieve that Zircle uses a kind of [**navigation stack**](https://developer.apple.com/documentation/uikit/uinavigationcontroller). In this type of interface, only one view is active at a time, but the last two views are also shown.
+`z-canvas` has just one property called `views` that passes your views to the child component `z-view-manager` that controls how views are displayed. To achieve that **zircle ui** uses a sort of [**navigation stack**](https://developer.apple.com/documentation/uikit/uinavigationcontroller). In this type of interface, only one view is active at a time, but with **zircle ui** the last two views are also shown.
 
 ### Zoom transitions
-The transition between views are also performed inside `z-canvas`. When a new view is triggered `z-canvas` calculates the inverted position and inverted scale of the triggered view and apply them to the canvas.
+The transition between views are also performed inside `z-canvas`. When a new view is triggered `z-canvas` calculates the inverted position and the inverted scale of the triggered view and apply them to the `z-canvas`.
 
 **Caveats**
 Currently zoom levels are restricted to 6. If you figure how to unlock more zoom levels let me know openning an issue or submiting a PR.
@@ -19,15 +19,15 @@ Currently zoom levels are restricted to 6. If you figure how to unlock more zoom
 ### Full and mixed modes
 <img :src="$withBase('/zircle-full.png')" style="margin-top: 20px; float:right" width="250px"/> 
 
-`z-canvas` comes with two modes that you can change using `config()`. By default, the app is in [full mode](/api/) and the `z-canvas` fulfills the browser's viewport. 
+**Zircle ui** comes with two modes that you can change using `config()`. By default, the app is in [full mode](/api/) and the `z-canvas` fulfills the browser's viewport. 
 
 <img :src="$withBase('/zircle-mixed.png')" style="margin-top: 20px; clear: right; float:right" width="250px"/>
 
-In case you set your app as [mixed mode](/api/) your application coexists with other implementations outside the scope of Zircle. In this case you need to add some css styles (width, height, border, etc.) into the `z-canvas`'s style or class attribute.  
+In case you set your app as [mixed mode](/api/) your application coexists with other implementations outside the scope of **zircle ui**. In this case you need to add some css styles (width, height, border, etc.) into the `z-canvas`'s style or class attribute.  
 
-The main difference between `full` and `mixed` mode is that in full mode Zircle pay attention to the browser's viewport, and in mixed mode the reference is the `z-canvas` itself.
+The main difference between `full` and `mixed` mode is that in full mode **zircle ui** pays attention to the browser's viewport, and in mixed mode the reference is the `z-canvas` itself.
 
-You should use `full` mode to build applications solely based on Zircle and `mixed` to interact with other elements outside Zircle.
+You should use `full` mode to build applications solely based on **zircle ui** and `mixed` to interact with other elements outside Zircle.
 
 ```html{3}
 <div id="app">
@@ -38,11 +38,11 @@ You should use `full` mode to build applications solely based on Zircle and `mix
 ```
 
 ::: tip
-It is no advicable use vue-router in `mixed` mode because the routes will interfere with your main application.
+You shouldn't use vue-router in `mixed` mode because the routes will interfere with your main application.
 ::: 
 
 ## Usage
-Besides the chosen app mode, the main role of `z-canvas` is to control your views. You need to populate the `z-canvas`'s `views` property with an `object` that holds all your defined views.
+Besides the chosen app mode, the main role of `z-canvas` is to control your views. You need to populate the z-canvas's `views` property with an `object` that holds all your defined views.
 
 ```html{3}
 <div id="app">
@@ -56,7 +56,7 @@ Besides the chosen app mode, the main role of `z-canvas` is to control your view
 
 **Option 1:** Pass `$options.components`
 
-You can include your views into into the [components option](https://vuejs.org/v2/guide/components-registration.html#Local-Registration) of the [Vue instance](https://vuejs.org/v2/guide/instance.html). Then you pass the **$options.components** to prop. `views`. 
+You can include your views into the [components option](https://vuejs.org/v2/guide/components-registration.html#Local-Registration) of the [Vue instance](https://vuejs.org/v2/guide/instance.html). Then you pass the **$options.components** to prop. `views`. 
 
 
 ```vue{4,15-19}
@@ -86,7 +86,7 @@ You can include your views into into the [components option](https://vuejs.org/v
 
 **Option 2:** Pass a `Vue data` object
 
-Sometimes is possible you don't want to pass all your componentes (e.g: you may have different components than views). In this case, you can pass a [Vue data](https://vuejs.org/v2/api/#Options-Data)  object with your views. 
+Sometimes is possible you don't want to pass all your componentes (e.g: you may have different components than views). In this case, you can pass a [Vue data](https://vuejs.org/v2/api/#Options-Data) object with your views. 
 
 ```vue{4,18-22}
 <template>

@@ -8,7 +8,7 @@ sidebarDepth: 2
 This component manages a list or collection of items. It works only inside `z-view` component and you need to use with the `z-view` `slot.extension`. In further releases it would be possible to extend `z-list` to `z-spot` and `z-dialog`.
 
 ### Populate your list
-`z-list`has a property mamed `items` to manage a list of items. The list has to be an `array`.
+`z-list`has a property named `items` to manage a list of items. The list has to be an `array`.
 
 ### Items por page
 Thanks to the property `perPage` you can define how many items are displayed en each page. By default `perPage` is set to show 5 items.
@@ -21,14 +21,15 @@ When the items are more than one page the child component `z-list-pagination` is
 As you maybe have noted, each item is a `z-spot` so its same properties applies here. However, there is an especial property you need to define: `index`
 
 ### Items view
-It is possible to define a view to go for each item. To achieve taht you need to use the property `toView`. This property has the same behavouir that `z-spot`. Thats means that you can define a view pointing to a name using just a `string`or you can pass params using an `object`.
-In the tutorial there are to examples if you want to see in action.
+It is possible to define a view to go for each item. To achieve taht you need to use the property `toView`. This property has the same behavouir that `z-spot`. Thats means that you can define a view using just a `string`or you can pass params using an `object`.
 
-In case you pass `params` zircle allow to catch the params given using `$zircle.getParams()`in you items view.
+In the tutorial there are to examples if you want to see in action.[>](#)
+
+In case you pass `params` **zircle ui** allows to catch the params given using `$zircle.getParams()`in you items view.
 
 
 ## Usage 
-Populate the property `collection` with an array of elements and define how many items per page you want to show using the property `per-page`. 
+Populate the property `items` with an array of elements and define how many items per page you want to show using the property `per-page`. 
 
 ```vue{3-12}
 <template>

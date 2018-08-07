@@ -2,7 +2,7 @@
 
 Used internally by `z-spot`
 
-As its name suggests this component display an interactive range knob. Usefull to create controls like volumes, dimmers, etc. The current value is shown as a label.
+As its name suggests this component display an interactive knob. Usefull to create controls like volumes, dimmers, etc. The current value is shown as a label.
 
 **Usage:**
 ```html
