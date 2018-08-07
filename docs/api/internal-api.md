@@ -1,5 +1,5 @@
 # Internal API
-If you browse the zircle's source code you may notice that thare a bunch of $zircle functions. Below there is a descriptions of what they are. Usefull to understand how zircle works.
+If you browse the zircle's source code you may notice that there are a bunch of $zircle actions. Below, there is a descriptions of what they do. Usefull to understand how **zircle ui** works.
 
 
 ## Router API
@@ -63,9 +63,6 @@ Returns the current navigation mode.
 
 ### getBackNavState()
 Returns the current navigation mode.
-
-### setBackNav(value)
-**VER SI SIGUE SIRVIENDO**
 
 ### goBack()
 Init a backward navigation.
