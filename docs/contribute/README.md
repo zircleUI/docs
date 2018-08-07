@@ -1,9 +1,58 @@
+---
+sidebar: auto
+---
 
-## Stay tunned
+# Contribute
 
-> Zircle is in <span style="color: green;"> active </span> development. Feedbacks and contributions are very welcome!
+First of all, thank you for being interested in contributing to **zircle ui**. 🙏 
 
-- Suscribe to the mailing list to receive news and updates about Zircle releases.
+A lot of things could be improved and enriched with you collaboration no matter if you are a experienced developer or not. Below you will find just some guidelines for inspiration.
+
+## Documentation
+You can write, translate and improve the zircle’s documentation. Each page has a link to its source code, so you can easily edite and send a PR if you find a typo or something is not clear enough.
+
+## Showcases and examples
+Let the community know about you! Send me a [DM at @zircle_ui](https://twitter.com/zircle_ui) with your project link.
+
+## Design
+Glad to hear suggestions to improve the look and feel, zircle’s usability and its consistence.
+
+## Coding
+Find an open issue to tackle. New features are welcome!
+
+### Inform an Issue
+Besides informing a bug, you can propose features, ideas, etc. Just try to explain what happens, what is expected to happen and a way to reproduce the issue.
+
+### Pull a request
+Reference your PR to a related issue and provide a description of the changes proposed.
+
+### Developer friendly
+You will need Node.js version 8+ installed.
+
+Open a terminal an type:
+
+```sh
+git clone https://github.com/zircleui/zircleui.git
+```
+After cloning the repository, execute:
+
+```sh
+npm install
+```
+
+## Do you like zircle ui?
+
+### Spread the word
+Help to promote the project with you friends, colleagues and the social media.
+
+### Become a stargazzer
+Maybe you don't have the habit to star projects on Github, I kindle ask you to do so.
+
+### Stay in touch
+
+- Follow **zircle ui** on [Twitter](https://twitter.com/zircle_ui)
+
+- Suscribe to the mailing list.
 
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
@@ -20,13 +69,4 @@
 
 <!--End mc_embed_signup-->
 
-- Follow Zircle on [Twitter](https://twitter.com/ZircleUI)
-
-## To-Do
-
-- [ ] Adapt Zircle to the style guide of Vue
-- [ ] Improve Zircle State Management
-- [x] Improve documentation.
-- [x] Add more examples.
-- [ ] Allow Zircle to be used in not Standalone mode.
 
