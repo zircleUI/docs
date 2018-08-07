@@ -1,7 +1,7 @@
 # Device
 
 ### Description
-This is a generic view to display the device category selected in the **devices** view. This view retrieves the params given and shows them thank to the zircle ui action `getParams()`
+This is a generic view to display the device category selected in the **devices** view. This view retrieves the params given and shows them thanks to the **zircle ui** action `getParams()`
 
 ### Reference
 - rooms
@@ -45,4 +45,4 @@ If you enable vue-router, its better to use $router.params to retrieve the param
 
 ## Wire up
 
-DOn t forget to import this component viees in app.vue
+Don't forget to import this component in **App.vue**!

@@ -68,4 +68,4 @@ export default {
 ```
 
 ### Wiring up
-After you finish this view you need to import it in the app.vue [as we did it here](/tutorial/wrapping-views.html)
+After you finish this view you need to import it in the **App.vue** [as we did it here](/tutorial/wrapping-views.html)

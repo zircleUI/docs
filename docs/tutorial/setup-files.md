@@ -66,7 +66,7 @@ Then we to included our `home` view inside `components` vue instance.
 Finally, we use the [vue hook **mounted**](#) to tell **zircle ui** that the initial view is **home**
 
 ### CSS style
-For this app we are going toimport a font from google fonts and use some icon of fontAwsemo.
+For this app we are going to import a font from [Google fonts](https://fonts.google.com/) and use some icon of Font Awesome.
 
 ### Create your first zircle ui view.
 

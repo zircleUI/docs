@@ -1,8 +1,8 @@
 # Migration guide
 
-With the release of **Zircle 1.0.0** many internal and external things have changed. As a result Zircle is now more intuitive and easy to use.
+With the release of **zircle ui 0.9.0** many internal and external things have changed. As a result **zircle ui** is now more intuitive and easy to use.
 
-Following this brief migration guide it will be easy for you to adatp your project to the new version of Zircle.
+Following this brief migration guide it will be easy for you to adatp your project to the new version of **zircle ui**.
 
 ## Built-in components with changes
 
@@ -115,9 +115,9 @@ $zircle.config({
 	- Use `config()`	
 
 ## CSS styles
-In zircle 0.3.3 the css styles were inside the zircle.js file (inlined css). At the begining, I thought it was cool, but using it a while I realized that it is difficult to adapt the style to a particular project. So, in zircle >= 1.0.0 the css styles are extracted into a separated css file again.
+Before **zircle ui 0.9.0** the css styles were inside the zircle.js file (inlined css). At the begining, I thought it was cool, but using it a while I realized that it is difficult to adapt the styles to a particular project. So, in **zircle ui >= 0.9.0** the css styles are extracted into a separated css file again.
 
-From zircle 1.0.0 the css prepocesor `sass` is used in development. Now there are two sass files. One, called `styles`with the generic styles and other called `themes`. 
+From **zircle ui 0.9.0** the css prepocessor `SASS` is used in development. Now there are two sass files. One, called `styles` with generic styles and other called `themes`. 
 
 Some css classes were renamed to avoid potentials conflicts with others libraries.
 

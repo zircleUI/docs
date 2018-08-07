@@ -20,7 +20,6 @@ module.exports = {
   serviceWorker: true,
   theme: 'zircle',
   themeConfig: {
-    logo: '/zui-white.png',
     repo: 'zircleUI/zircleUI',
     docsRepo: 'zircleUI/docs',
     docsDir: 'docs',

@@ -1,6 +1,6 @@
 # Design guide
 
-The Tizen team has published an [awesome guide of design principles for their wearable ui](https://developer.tizen.org/design/wearable/design-principles). The following content is an adaptation of some useful tips that may help you when use zircle ui.
+The Tizen team has published an [awesome guide of design principles for their wearable ui](https://developer.tizen.org/design/wearable/design-principles). The following content is an adaptation of some useful tips that may help you when use **zircle ui**.
 
 ## Design Principles
 
@@ -14,7 +14,7 @@ Your app will have a greater impact when you focus on a simple, core idea. Place
 Graphic elements enhance the visibility of your main idea. They can also be more effective than several lines of text when conveying meaning. When you need to use text, select a font size that’s easily read.
  
 ### Easy to follow
-Users should be able to control the zircle app quickly and conveniently. Avoid making it complicated for users to complete their task. Consistent, meaningful, and intuitive designs help users navigate views and orient themselves within your app. Avoid non-essential screens that require additional user interactions.
+Users should be able to control the **zircle ui** app quickly and conveniently. Avoid making it complicated for users to complete their task. Consistent, meaningful, and intuitive designs help users navigate views and orient themselves within your app. Avoid non-essential screens that require additional user interactions.
 
 #### Suggest interactions intuitively
 Intuitive and meaningful connections between interactions and components on the view can help users better understand the information and its context.

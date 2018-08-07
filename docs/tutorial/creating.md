@@ -1,5 +1,5 @@
 # Creating your first app
-We are going to use **vue-cli 3** to scalfold the **smart home dashboard**. Vue-cli 3 is awesome to create vue projects without wasting time.
+We are going to use [**vue-cli 3**](https://cli.vuejs.org/) to scalfold the **smart home app**. Vue-cli 3 is awesome to create vue projects without wasting time.
 
 If you have some experience with vue.js you can easily adapt this tutorial to be used into code sandboxes or browsers. Please check out our [getting started section](/guide/getting-started.html).
 

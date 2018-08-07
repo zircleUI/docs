@@ -1,8 +1,8 @@
 # Introduction
 
-In this tutorial, we are going to create a **simple dashboard for a smart home**. By the end, you should have a basic understanding of **zircle ui**. Have in mind that the dashboard is designed just for learning purposes and is not meant to be ready for production.
+In this tutorial, we are going to create a **simple dashboard for a smart home app**. By the end, you should have a basic understanding of **zircle ui**. Have in mind that the dashboard is designed just for learning purposes and is not meant to be ready for production.
 
-Some previous knowledge of **vue.js** is recommended for this tutorial.
+Some previous knowledge of [**vue.js**](https://vuejs.org) is recommended for this tutorial.
 
 <img :src="$withBase('/smart-home.png')" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 

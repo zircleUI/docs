@@ -1,12 +1,13 @@
 # TV
 
 ### Description
-Here it is our TV control view. We have already refered to this view in the 'living-room. ' and now it is time to create it.
-We are using a slot.media with youtube to simulate a channel.
+Here it is our TV control view. We have already refered to this view in the [living-room](#) and now is time to create it.
+
+We are using a `slot.media` with youtube to simulate a channel.
 
 ### References
 
-Most of code refres to:
+Most of code refers to:
 - Family view
 - Home view
 - Slot.media
@@ -87,4 +88,4 @@ export default {
 ```
 
 ### Wiring up
-After you finish this view you need to import it in the app.vue [as we did it here](/tutorial/wrapping-views.html)
+After you finish this view you need to import it in the **App.vue** [as we did it here](/tutorial/wrapping-views.html)

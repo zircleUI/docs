@@ -1,11 +1,13 @@
 # Devices
 
 ### Description
-This is a very simple view that is shown in the home view. This view simulates a list of smart devices. We are going to use `z-list` component. BEsides that, we are going to pass an object with params in the property `toView` in order to open a *no-yet-created* **device** view (you can build this view in the next section)
+This is a very simple view that is going to be shown in the **home view**. This view simulates a list of smart devices. 
+
+We are going to use a `z-list` component. Besides that, we are going to pass an object with params in the property `toView` in order to open a *no-yet-created* **device** view (you can build this view in the next section).
 
 ### References
 
-Most of code refres to:
+Most of code refers to:
 - Rooms view
 - Home view
 - Slot.media
@@ -65,4 +67,4 @@ export default {
 
 
 ### Wiring up
-After you finish this view you need to import it in the app.vue [as we did it here](/tutorial/wrapping-views.html)
+After you finish this view you need to import it in the **App.vue** [as we did it here](/tutorial/wrapping-views.html)

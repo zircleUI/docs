@@ -1,9 +1,9 @@
 # Using Vue-Router
 
-You can use Zircle with [Vue-Router](https://router.vuejs.org/) in any environment (from sandbox to vue-cli). Just follow this tips and examples.
+You can use **zircle ui** with [Vue-Router](https://router.vuejs.org/) in any environment (from sandbox to vue-cli). Just follow this tips and examples.
 
 ::: tip
-Using Vue-Router is easy and straight forward because Zircle creates the routes automatically based on you views.
+Using Vue-Router is easy and straight forward because **zircle ui** creates the routes automatically based on you views.
 :::
 
 ## For Browser or sandboxes.
@@ -16,7 +16,7 @@ Add Vue-Router using a `<script>` tag
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 ```
 
-### Setup Zircle and Vue-router
+### Setup zircle ui and vue-router
 
 * Add `<z-canvas>` component in your html
 * Create some view components.
@@ -29,6 +29,8 @@ Add Vue-Router using a `<script>` tag
   <head>
   <!-- Vue.js -->
   <script type="text/javascript" src="https://unpkg.com/vue"></script>
+  <!-- Vue-router -->
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
  
   <!-- Zircle from CDN-->
   <script type="text/javascript" src="https://unpkg.com/zircle"></script>
@@ -80,10 +82,10 @@ Add Vue-Router using a `<script>` tag
     },
     router,
     mounted() {
-      this.$zircle.setView('foo')
       this.$zircle.config({
         router
       })
+      this.$zircle.setView('foo')
     }
   })
   </script>
@@ -96,15 +98,15 @@ Check this demo in [JSFiddle](https://jsfiddle.net/tinchox5/g39omwxv/)
 - [`z-canvas`](/api/#z-canvas)
 - [`$zircle.setView()`](#)
 
-## For NPM or Vue-CLI
+## For NPM or vue-cli
 
-### Install Vue-Router in your project
+### Install vue-router in your project
 ```bash 
 npm install vue-router
 ```
 
 ::: tip
-In case using Vue-CLI simply accept to Install Vue-Router in the project generator. Of course, you can install the router later.
+In case using vue-cli simply accept to Install vue-rRouter in the project generator. Of course, you can install the router later.
 :::
 
 In your `main.js` file
@@ -120,13 +122,13 @@ new Vue({
 }).$mount('#app')
 ```
 
-### Setup Zircle and Vue-router
+### Setup zircle ui and vue-router
 
 Steps:
 
-* Add `<z-canvas>` components in the `<template>`
+* Add `<z-canvas>` components in the `<template>` tag.
 * Create some view components.
-* Config Vue Router.
+* Config vue-router.
 * Create a [Vue Instance](https://vuejs.org/v2/guide/instance.html).
 
 In your `App.vue`
@@ -163,9 +165,10 @@ export default {
   },
   router,
   mounted () {
-    this.$zircle.setView('foo', {
-      router
-    })
+    this.$zircle.config({
+        router
+      })
+    this.$zircle.setView('foo')
   }
 }
 </script>

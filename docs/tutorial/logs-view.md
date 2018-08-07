@@ -1,7 +1,7 @@
 # Logs
 
 ### Description
-This simply view shows you what happens when the main conten is largar than the `z-view` container. Also, the systems logs could be deleted pressing the reset button. A `z-dialog` will be activated to confirm that
+This simple view shows you what happens when the main content is larger than the `z-view` container. Also, the systems logs could be deleted pressing the reset button. A `z-dialog` will be activated to confirm that.
 
 ### Reference
 - rooms view
@@ -96,4 +96,4 @@ li {
 ```
 
 ### Wiring up
-After you finish this view you need to import it in the app.vue [as we did it here](/tutorial/wrapping-views.html)
+After you finish this view you need to import it in the **App.vue** [as we did it here](/tutorial/wrapping-views.html)
