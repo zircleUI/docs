@@ -17,17 +17,16 @@ The transition between views are also performed inside `z-canvas`. When a new vi
 Currently zoom levels are restricted to 6. If you figure how to unlock more zoom levels let me know openning an issue or submiting a PR.
 
 ### Full and mixed modes
-<img :src="$withBase('/zircle-full.png')" style="margin-top: 20px; float:right" width="250px"/> 
 
 **Zircle ui** comes with two modes that you can change using `config()`. By default, the app is in [full mode](/api/) and the `z-canvas` fulfills the browser's viewport. 
 
-<img :src="$withBase('/zircle-mixed.png')" style="margin-top: 20px; clear: right; float:right" width="250px"/>
+In case you set your app as [mixed mode](/api/) your application coexists with other implementations outside the scope of **zircle ui**.
 
-In case you set your app as [mixed mode](/api/) your application coexists with other implementations outside the scope of **zircle ui**. In this case you need to add some css styles (width, height, border, etc.) into the `z-canvas`'s style or class attribute.  
+<img :src="$withBase('/zircle-app-modes.png')" style="margin-top: 20px; border-radius: 6px" width="100%"/> 
 
 The main difference between `full` and `mixed` mode is that in full mode **zircle ui** pays attention to the browser's viewport, and in mixed mode the reference is the `z-canvas` itself.
 
-You should use `full` mode to build applications solely based on **zircle ui** and `mixed` to interact with other elements outside Zircle.
+You should use `full` mode to build applications solely based on **zircle ui** and `mixed` to interact with other elements outside Zircle. In tha later case you need to add some css styles (width, height, border, etc.) into the `z-canvas`'s style or class attribute.  
 
 ```html{3}
 <div id="app">

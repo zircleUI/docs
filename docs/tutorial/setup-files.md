@@ -57,16 +57,16 @@ export default {
 
 In the `<template>` tag we added the zircle's `z-canvas` component. All your **zircle ui** stuff will be rendered inside this component. `z-canvas` could be considered as a frame in where **zircle ui** lives. For this reason whenever you start a **zircle ui** project, you need to use it.
 
-`z-canvas` has just one property called **views** where you pass all your views. For the purposes of this tutorial we are going to put our views inside the components options of the Vue instance: [**$options.components**](#). However there are [many other ways to do that](#). 
+`z-canvas` has just one property called **views** where you pass all your views. For the purposes of this tutorial we are going to put our views inside the components options of the Vue instance: [**$options.components**](https://vuejs.org/v2/api/#vm-options). However there are [many other ways to do that](/api/z-canvas.html#how-to-pass-your-views-to-property-views). 
 
 Let's figure out what happens inside the `<script>` tag. Here we imported a *no-yet-created* `home.vue` file from the **/views** folder. 
 
 Then we to included our `home` view inside `components` vue instance.
 
-Finally, we use the [vue hook **mounted**](#) to tell **zircle ui** that the initial view is **home**
+Finally, we use the [vue hook **mounted**]https://vuejs.org/v2/api/#mounted) to tell **zircle ui** that the initial view is **home**
 
 ### CSS style
-For this app we are going to import a font from [Google fonts](https://fonts.google.com/) and use some icon of Font Awesome.
+For this app we are going to import a font from [Google fonts](https://fonts.google.com/) and use some icon of [Font Awesome](https://fontawesome.com/).
 
 ### Create your first zircle ui view.
 
@@ -83,10 +83,15 @@ In you editor create a **home.vue** file into **/src/views/** folder with the fo
 
 That's all, now check your browser. The app will now look much like this:
 
-> #### METER IMAGEN DEL HOME
-> - 
+<img :src="$withBase('/initial-home-view.png')" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; width: 50%; border-radius: 6px;" />
+
+### See:
+- [Guide: getting started](/guide/getting-started.html)
+- [z-canvas](/api/z-canvas.html)
+- [z-view](/api/z-view.html)
+- [setView()](/api/public-api.html#setview-viewname)
 
 ## Next steps
-For our app it is neccesary to creates a bunch of views files that will be place in the `/src/views` folder. In each view you will learn some features of **zircle ui**. 
+For our app it is neccesary to creates a bunch of views files that will be place in the **/src/views** folder. In each view you will learn some features of **zircle ui**. 
 
 

@@ -1,7 +1,7 @@
 # Settings
 
 ## Description
-In this view we are going to include a `z-spot` component running as **button**. We'll add a [**vue v-for directive**](#) to render a list of visual themes that comes with **zircle ui**. Also, we'll learn how to use some [**zircle ui actions**](#) to set and retrieve themes.
+In this view we are going to include a `z-spot` component running as **button**. We'll add a [**vue v-for directive**](https://vuejs.org/v2/guide/list.html#Mapping-an-Array-to-Elements-with-v-for#) to render a list of visual themes that comes with **zircle ui**. Also, we'll learn how to use some [**zircle ui actions**](/api/public-api.html) to set and retrieve themes.
 
 ## Code
 As we did with **home view** we need to create a `settings.vue` file inside the `views` folder and paste the following code:
@@ -105,7 +105,7 @@ After that, we connect this data with the remain properties.
   />
 ```
 
-- **changeStyle() method:** Finally, we link the Vue method "changeStyle()" into a Vue event `@click.native` to allow themes to be changed.
+- **changeStyle() method:** Finally, we link the [Vue method](https://vuejs.org/v2/api/#methods) "changeStyle()" into a [Vue event](https://vuejs.org/v2/guide/events.html) `@click.native` to allow themes to be changed.
 
 ```html{3}
 <z-spot 
@@ -131,4 +131,13 @@ As a bonus, we define a dynamic css class to set the button active when it match
 To achieve that we use two zircle actions: `$zircle.getTheme()` and `$zircle.getThemeMode()`. This actions retrieve the current active theme and theme mode.
 
 - That's all. Save it and check your browser.
+
+
+### See:
+- [z-view](/api/z-view.html)
+- [z-spot](/api/z-spot.html)
+- [config()](/api/public-api.html#config-definition)
+- [getTheme()](/api/internal-api.html#getcurrenttheme)
+- [getThemeMode()](/api/internal-api.html#getcurrenttheme)
+- [Themes and styles](/guide/themes-styles-and-colors.html)
 

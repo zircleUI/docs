@@ -4,7 +4,7 @@ In this tutorial, we are going to create a **simple dashboard for a smart home a
 
 Some previous knowledge of [**vue.js**](https://vuejs.org) is recommended for this tutorial.
 
-<img :src="$withBase('/smart-home.png')" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<img :src="$withBase('/smart-home.jpg')" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 If you don't want to follow this tutorial step-by-step, you can clone the dashboard to follow this tutorial. Open a terminal an type:
 

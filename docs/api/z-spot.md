@@ -5,14 +5,14 @@ sidebarDepth: 2
 # z-spot
 
 ## Description
-<img :src="$withBase('/z-view.png')" style="clear: right; margin-top: 20px; float:right" width="250px"/>
+<img :src="$withBase('/z-spot.png')" style="clear: right; margin-top: 20px; float:right" width="250px"/>
 
 By default this component allows to zoom-in to a new view. In other words is a zoomable component to go to another view. Inside a `z-spot` you can nest other [z-spot](#z-spot). Currently, `z-list` is not available for `z-spot`  
 
 ### Zoom-in to a new view 
-By default, `z-spot` is made to perform a zoom transition to another view. You need to use the property `to-view` indicating the name of the view you want to go. Also, is it possble to pass params that work with or without vue-router.
+By default, `z-spot` is made to perform a zoom transition to another view. You need to use the property `to-view` indicating the name of the view you want to go. Also, is it possible to pass params that work with or without vue-router.
 
-If you want to point a view to go, simply use `to-view` as `string` with the view name (it is not case sensible). In case, you need to pass some params it is necesary to use an `object` in `to-view` as follows:
+If you want to point a view to go, simply use `to-view` as `string` with the view name (it is not case sensitive). In case, you need to pass some params it is necesary to use an `object` in `to-view` as follows:
 
 ```js
 to-view: "{ 
@@ -27,9 +27,11 @@ to-view: "{
 Then in the target view, you can retrieve the params using `$zircle.getParams()`
 
 ### Positioning
-`z-spot` is positionated taking into account its parent component (a `z-view`or a `z-spot`). Having that in mind, you need to use two properties: `angle` and `distance`.
+`z-spot` is positionated according its parent component (a `z-view`or a `z-spot`). Having that in mind, you need to use two properties: `angle` and `distance`.
 
 To precise an `angle` put any value between 0 and 360 degrees (also, could be a negative degree). See the diagram provided.
+
+<img :src="$withBase('/angles.png')" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
 
 The `distance`  is a numeric value that represent the percentage of distance from the parent component. By default the `z-spot` has the 100% of distance. That it means that the center of the `z-spot` is placed exactly in the tangent of the parent component. 
 
@@ -45,30 +47,37 @@ By default the diameter of the `z-spot` is `medium`. To change it, simply use th
 
 ### z-spot as button
 This component can mutate its default behaviour to run as `button`. To enabled it set the property `button` as `true`.
-> Take into account that property `to-view` is disabled when `button` is active. (no yet)
 
 In addition, you should add a [vue event](https://vuejs.org/v2/guide/events.html) when `button` is pressed.
 
 ### z-spot as knob
 
-As happen with `button`, `z-spot`  can be a `knob`. As its name suggests this component displays an interactive circular progress bar with a circular handler. Usefull to create controls like volume, dimmers, etc.
+As happens with `button`, `z-spot`  can be a `knob`. As its name suggests this component displays an interactive circular progress bar with a circular handler. Usefull to create controls like volume, dimmers, etc.
 
-To enabled it set the property `knob` as `true` and optionally provide its initial value using the property `qty`.
-
-By default the `z-knob` has a range of 0-100 and show the current value in its label. 
-
-You may need to the range values, unit displayed and where to show the current value. In that case, you can pass an `object`.
+To enabled it set the property `knob` as `true` and optionally provide its initial value using the property `qty`. By default the `z-knob` has a range of 0-100 and show the current value in its label. 
 
 ```html
 <z-spot
-	range
-	progress: {
-		unit: '˚C'
-		value: 5,
-		max: 30,
-		pos: 'inside'
-	}>
+	knob
+	qty:"56" >
 </z-spot>
+```
+
+You may need to customize the knob values: range values, unit displayed and where to show the current value. In that case, you can pass an `object`.
+
+Here you have to pay atention at [v-bind.sync](#) which is a vue property that allows us to pass and object using two-ways communication.
+
+As [Vue indicates](https://vuejs.org/v2/guide/components-custom-events.html#sync-Modifier) you can't use `v-bind.sync` with a literal object, such as `v-bind.sync=”{ qty: 24, unit: '˚C', min: 18, max: 32 }”`, you need to use an object data.
+
+```html
+<z-spot
+	knob
+	v-bind.sync: "temperature" >
+</z-spot>
+```
+
+```js
+vm.temperature = {qty: 24, unit: '˚C', min: 18, max: 32}
 ```
 
 ### Organize your content
@@ -91,11 +100,12 @@ If you want put the label in a different place, use the property **`labelPos`** 
 
 
 ### Content layers
-<img :src="$withBase('/z-view-order.png')" style="clear: right; margin-top: 20px; float:right" width="250px"/>
 
-On the right you can see a diagram to show how the content is placed. The `slot.image` is on the bottom, then the `slot.default`, and the `slot.extension`. 
+OYou can see a diagram that shows how the content is placed. The `slot.image` is on the bottom, then the `slot.default`, and the `slot.extension`. 
 
-### Extras
+<img :src="$withBase('/z-spot-layers.png')" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+
+### Slider
 `z-spot` has a child component named `z-slider` that allow to show a circular progress bar around its perimeter. You need to set `true` the property `slider` and use the property `progress` with a value. 
 
 ### Caveats
@@ -108,18 +118,18 @@ On the right you can see a diagram to show how the content is placed. The `slot.
 - The idea behind `z-spot` is that it should be a component to perform a transition to another view that by design doesn't have any of the above caveats. Having said that, all this limitations may be overcome in further releases.
 
 ::: tip
-`z-scale` is the viewport of the next view. So, when you design a view and include a `z-scale` maybe is good to provide some hints of what it will see next. 
+`z-spot` is the viewport of the next view. So, when you design a view and include a `z-spot` maybe is good to provide some hints of what it will see next. 
 :::
 
 ## Usage
 
 ```html
-<z-scale
+<z-spot
   :angle="45"
   :distance="140"
   size="large"
   to-view="bar">
-</z-scale>
+</z-spot>
 ```
 
 ## Props
@@ -141,5 +151,5 @@ On the right you can see a diagram to show how the content is placed. The `slot.
 | Slot | Description
 | :--- | :--- |
 | `default` | Default Vue Slot. It is used to put any kind of content such as text, icons, etc. 
-| `extension` | It is used when you nest other components such as `<z-scale>`, `<z-button>` or `<z-alert>` inside the view container.
+| `extension` | It is used when you nest other `<z-spot>` components.
 

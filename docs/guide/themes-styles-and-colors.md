@@ -73,6 +73,8 @@ new Vue({
   }
 })
 ```
+#### See:
+- [`$zircle.config()`](/api/public-api.html#config-definition)
 
 ## Customization
 
@@ -103,12 +105,15 @@ In you project you can add a custom css class or an inline style attribute using
 </z-spot>
 ```
 
+#### See:
+- [Tutorial - Home view](/tutorial/home-view.html)
+
 ## SASS files
 
 Currently, **zircle ui** has two SASS files
 
-- [**themes.sass**](#)
-- [**style.sass**](#)
+- [**themes.sass**](https://github.com/zircleUI/zircleUI/tree/master/src/styles/sass/themes.sass)
+- [**styles.sass**](https://github.com/zircleUI/zircleUI/tree/master/src/styles/sass/styles.sass)
 
 
 

@@ -10,7 +10,7 @@ Following this brief migration guide it will be easy for you to adatp your proje
 
 - **Changes:**
 	- **`z-canvas` has now a new property named `views`**
-	- Use prop `views` to pass all your project views.
+	- Use prop `views` to pass all your zircle's views.
 
 - See [**z-canvas**](/api/z-canvas.html)
 
@@ -18,6 +18,8 @@ Following this brief migration guide it will be easy for you to adatp your proje
 - **Changes:**
 	- **`z-view-manager` becomes a child component of `z-canvas`**
 	- It is no longer a `public`component, so you don't need to use anymore.
+
+- See [**z-view-manager**](/api/z-view-manager.html)
 
 ### z-panel
 - **Changes:**
@@ -44,7 +46,7 @@ Following this brief migration guide it will be easy for you to adatp your proje
 <z-spot button></z-spot>
 ```
 
-- See [**z-spot button**](/api/z-spot.html#play-as-button)
+- See [**z-spot button**](/api/z-spot.html#z-spot-as-button)
 
 ### z-range
 - **Changes:**
@@ -54,7 +56,7 @@ Following this brief migration guide it will be easy for you to adatp your proje
 ```html
 <z-spot knob></z-spot>
 ```
-- See [**z-spot knob**](/api/z-spot.html#play-as-range-knob)
+- See [**z-spot knob**](/api/z-spot.html#z-spot-as-knob)
 
 ### z-list
 - **Changes:**
@@ -88,7 +90,7 @@ Following this brief migration guide it will be easy for you to adatp your proje
 ### config()
 - **New**
 - **Optional**
-- Use to config your zircle project
+- Use to config your **zircle ui** project
 
 ```js
 $zircle.config({
@@ -109,18 +111,22 @@ $zircle.config({
 	- **`setRouter()` was deleted**
 	- Use `config()`
 
+- See [**config()**](/api/public-api.html#config)
+
 ### routerHooks() 
 - **Changes:**
 	- **`routerHooks()` was deleted**
-	- Use `config()`	
+	- Use `config()`
+
+- See [**config()**](/api/public-api.html#config)	
 
 ## CSS styles
-Before **zircle ui 0.9.0** the css styles were inside the zircle.js file (inlined css). At the begining, I thought it was cool, but using it a while I realized that it is difficult to adapt the styles to a particular project. So, in **zircle ui >= 0.9.0** the css styles are extracted into a separated css file again.
+Before **zircle ui 0.9.0** the css styles were inside the zircle.js file ([inlined css](https://www.lifewire.com/avoid-inline-styles-for-css-3466846)). At the begining, I thought it was cool, but using it a while I realized that it is difficult to adapt the styles to a particular project. So, in **zircle ui >= 0.9.0** the css styles are extracted into a separated css file again.
 
-From **zircle ui 0.9.0** the css prepocessor `SASS` is used in development. Now there are two sass files. One, called `styles` with generic styles and other called `themes`. 
+From **zircle ui 0.9.0** the css prepocessor [SASS](http://sass-lang.com/) is used in development. Now there are two sass files. One, called `styles` with generic styles and other called `themes`. 
 
 Some css classes were renamed to avoid potentials conflicts with others libraries.
 
-- See [**API**](/guide/themes-styles-and-colors.html)
+- See [**Themes and styles**](/guide/themes-styles-and-colors.html), [**config()**](/api/public-api.html#config)
 
 

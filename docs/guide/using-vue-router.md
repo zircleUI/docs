@@ -1,16 +1,16 @@
 # Using Vue-Router
 
-You can use **zircle ui** with [Vue-Router](https://router.vuejs.org/) in any environment (from sandbox to vue-cli). Just follow this tips and examples.
+You can use **zircle ui** with [Vue-Router](https://router.vuejs.org/) in any environment (from sandbox to vue-cli).
 
 ::: tip
-Using Vue-Router is easy and straight forward because **zircle ui** creates the routes automatically based on you views.
+Using vue-router is easy and straightforward because **zircle ui** creates the routes automatically based on your views.
 :::
 
 ## For Browser or sandboxes.
 
 ### Installing Vue-Router
 
-Add Vue-Router using a `<script>` tag
+Add vue-router using a `<script>` tag
 
 ```html
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -18,10 +18,10 @@ Add Vue-Router using a `<script>` tag
 
 ### Setup zircle ui and vue-router
 
-* Add `<z-canvas>` component in your html
+* Add [**z-canvas**](/api/z-canvas.html) component in your html.
 * Create some view components.
-* Config Vue Router.
-* Config Vue Instance.
+* Config Vue router.
+* Create a [Vue Instance](https://vuejs.org/v2/guide/instance.html).
 
 ```html
 <!DOCTYPE html>
@@ -29,6 +29,7 @@ Add Vue-Router using a `<script>` tag
   <head>
   <!-- Vue.js -->
   <script type="text/javascript" src="https://unpkg.com/vue"></script>
+
   <!-- Vue-router -->
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
  
@@ -58,21 +59,7 @@ Add Vue-Router using a `<script>` tag
     template: `<z-view>Bar View</z-view>`
   }
   // Vue Router configuration (You can ommit the routes definition)
-  const router = new VueRouter({
-    // optional
-    routes: [{
-      path: '/',
-      redirect: '/foo'
-    }, {
-      path: '/foo',
-      name: 'foo',
-      component: foo
-    }, {
-      path: '/bar',
-      name: 'bar',
-      component: bar
-    }]
-  })
+  const router = new VueRouter()
 
   new Vue({
     el: '#app',
@@ -95,8 +82,10 @@ Add Vue-Router using a `<script>` tag
 Check this demo in [JSFiddle](https://jsfiddle.net/tinchox5/g39omwxv/) 
 
 #### See: 
-- [`z-canvas`](/api/#z-canvas)
-- [`$zircle.setView()`](#)
+- [`z-canvas`](/api/z-canvas.html)
+- [`z-spot`](/api/z-spot.html)
+- [`$zircle.config()`](/api/public-api.html#config-definition)
+- [`$zircle.setView()`](/api/public-api.html#setview-viewname)
 
 ## For NPM or vue-cli
 
@@ -126,12 +115,13 @@ new Vue({
 
 Steps:
 
-* Add `<z-canvas>` components in the `<template>` tag.
+* Add [**z-canvas**](/api/z-canvas.html) component in the `<template>` tag.
 * Create some view components.
 * Config vue-router.
 * Create a [Vue Instance](https://vuejs.org/v2/guide/instance.html).
 
 In your `App.vue`
+
 ```vue
 <template>
     <z-canvas :views="$options.components"></z-canvas>
@@ -139,22 +129,9 @@ In your `App.vue`
 <script>
 import Vue from 'vue'
 import Router from 'vue-router'
+import foo from '/components/foo'
+import bar from '/components/bar'
 Vue.use(Router)
-
-const foo = {
-  template: `<z-view view-name="foo">Foo View
-      <z-spot
-        slot="extension"
-        :angle="45"
-        to-view="bar">
-        Bar
-      </z-spot>
-  </z-view>`
-}
-
-const bar = {
-  template: `<z-view view="bar">Bar View</z-view>`
-}
 
 const router = new Router({})
 
@@ -174,9 +151,34 @@ export default {
 </script>
 
 ```
+
+Create **foo** and **bar** views on the **src/components/** folder:
+
+```vue
+<template>
+  <z-view>Foo View
+    <z-spot
+      slot="extension"
+      :angle="45"
+      to-view="bar">
+      Bar
+    </z-spot>
+  </z-view>
+</template>
+```
+
+```vue
+<template>
+  <z-view>Bar View
+  </z-view>
+</template>
+```
+
 Check this example on [CodeSandbox](https://codesandbox.io/s/2x39p49kmn)
 
 #### See: 
-- [`z-canvas`](/api/#z-canvas)
-- [`$zircle.setView()`](#)
+- [`z-canvas`](/api/z-canvas.html)
+- [`z-spot`](/api/z-spot.html)
+- [`$zircle.config()`](/api/public-api.html#config-definition)
+- [`$zircle.setView()`](/api/public-api.html#setview-viewname)
 

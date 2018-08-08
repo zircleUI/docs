@@ -5,6 +5,8 @@ sidebarDepth: 2
 # z-list
 
 ## Description
+<img :src="$withBase('/z-list.png')" style="clear: right; margin-top: 20px; float:right" width="250px"/>
+
 This component manages a list or collection of items. It works only inside `z-view` component and you need to use with the `z-view` `slot.extension`. In further releases it would be possible to extend `z-list` to `z-spot` and `z-dialog`.
 
 ### Populate your list

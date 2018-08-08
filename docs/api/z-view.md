@@ -65,9 +65,10 @@ If you want put the label in a different place, use the property **`labelPos`** 
 
 
 ### Content layers
-<img :src="$withBase('/z-view-order.png')" style="clear: right; margin-top: 20px; float:right" width="250px"/>
 
 On the right you can see a diagram to show how the content is placed. The `slot.image` is on the bottom, then the `slot.default`, followed by the `slot.media` and the `slot.extension`. 
+
+<img :src="$withBase('/z-view-layers.png')" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
 
 As you may noticed `slot.media` is over the `slot.default`, that is intended because rich media content usually needs to be interactive. 
 
@@ -77,21 +78,6 @@ In case you want to show both a regular content and a rich media, you should put
 `z-view` has a child component named `z-slider` that allow to show a circular progress bar around its perimeter. You need to set `true` the property `slider`and use the property `progress` with a value.
 
 ## Usage
-```js
-view: {
-	properties: {
-		slider: false
-		progress: 0,
-		label: '',
-		labelPos: '',
-		imagePath: ''
-	},
-	slots: {
-		default,
-		media
-		extension
-	}
-}
 ```
 
 ```html

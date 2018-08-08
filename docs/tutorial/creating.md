@@ -66,3 +66,7 @@ Open your web browser and go to `http://localhost:8080` to see the app running.
 If the default port 8080 is used, Vue will choose another. See your terminal to find out the active port.
 
 :::
+
+### See: 
+- [Guide: getting started](/guide/getting-started.html)
+
