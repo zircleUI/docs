@@ -1,21 +1,5 @@
 # Internal API
-If you browse the zircle's source code you may notice that there are a bunch of $zircle actions. Below, there is a descriptions of what they do. Usefull to understand how **zircle ui** works.
-
-
-## Router API
-### setRouter(router, view)
-- **Params:**
-    - {Object} router
-    - {String} view
-
-- **Descriptipn**
-Invoked when the vue-router is enabled, after it has been set in **config**
-
-### getRouterState()
-Retrieves the router state.
-
-- **Return**
-  - Boolean.
+If you browse the [**zircle's source code**](https://github.com/zircleUI/zircleUI/tree/master/src) you may notice that there are a bunch of **$zircle** actions. Below, there is a descriptions of what they do. Useful to understand how **zircle-ui** works.
 
 ## Navigation API
 ### setComponentList(views)
@@ -34,7 +18,7 @@ Retrieves the defined views.
     - {String} view
 
 - **Descriptipn**
-Resolves view as [vue components](#)
+Resolves view as a  [vue component](https://vuejs.org/v2/guide/components-registration.html)
 
 ### getCurrentViewName()
 Returns the current view's name.
@@ -56,12 +40,12 @@ Returns the history's length
     - {string} value
 
 - **Descriptipn**
-Set direction of the zoomable navigation to 'forward' or 'backward'.
+Set direction of the zoomable navigation to **forward** or **backward**.
 
 ### getNavigationMode()
 Returns the current navigation mode.
 
-### getBackNavState()
+### getBackwardNavigationState()
 Returns the current navigation mode.
 
 ### goBack()
@@ -76,9 +60,6 @@ Returns coords of the previous view
 
 ### getPastPosition()
 Returns coords of the past view
-
-### getLastPosition()
-Returns coords of the gone view
 
 ### calcPanelPosition()
 Calculates the position of the view
@@ -97,14 +78,7 @@ Returns the value of a prop.size provided (e.g: 'small' => 140).
 Recalculates the props.size of the components according the viewport when a resize event is detected. In case the app is in emedded mode, it will detect the canvas's width.
 
 ### getAppMode()
-Returns the current app mode. 'full' or 'embedded'.
-
-## Theme and Styles API
-### getCurrentTheme()
-Returns the current app theme. see the [built-in themes](#themes)
-
-### getCurrentColor()
-Returns the current color. see the [built-in colors](#colors)
+Returns the current app mode. **full** or **mixed**.
 
 ## List API
 ### setPages(value)
@@ -127,6 +101,17 @@ Returns the index of the current page.
 ### getNumberOfItemsInCurrentPage()
 Returns the number of item in the current page.
 
+## Router API
+### setRouterHooks()
+- **Descriptipn**
+Invoked when the vue-router is enabled, after it has been set in [**$zircle.config()**](/api/public-api.html#config-definition)
+
+### getRouterState()
+Retrieves the router state.
+
+- **Return**
+  - Boolean.
+
 ## Debug API
 ### setLog(msg, type)
 - **Params:**
@@ -134,7 +119,11 @@ Returns the number of item in the current page.
     - {String} type
 
 - **Descriptipn**
-Internal debug logger activated vue [config](#setapp) that print messages to the browser's console.
-It groups zircle's log when a navigation starts.
+Internal debug logger can be activated with [**$zircle.config()**](/api/public-api.html#config-definition). Prints messages to the browser's console.
+
+### getState()
+- **Descriptipn**
+Retrieves the **zircle-ui** state management
+
 
 

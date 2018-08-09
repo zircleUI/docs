@@ -1,8 +1,8 @@
 # z-view-manager 
 
-Used internally by `z-canvas`.
+Internally used by [z-canvas](/api/z-canvas.html).
 
-This component is the child component of `z-canvas` that controll which views are displayed. `z-canvas-view-manager` is wrapped by a vue transition-group. 
+This component is the child component of `z-canvas` that controll which views are displayed. `z-view-manager` is wrapped by a [vue transition-group](https://vuejs.org/v2/api/#transition-group). 
 
 Source code: 
 

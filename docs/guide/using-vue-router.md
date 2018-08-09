@@ -1,12 +1,13 @@
 # Using Vue-Router
 
-You can use **zircle ui** with [Vue-Router](https://router.vuejs.org/) in any environment (from sandbox to vue-cli).
+You can use **zircle-ui** with [Vue-Router](https://router.vuejs.org/) in any environment (from sandbox to vue-cli). 
 
 ::: tip
-Using vue-router is easy and straightforward because **zircle ui** creates the routes automatically based on your views.
+Using vue-router is easy and straightforward because **zircle-ui** creates the routes automatically based on your views. However, you can define your routes as usual.
+
 :::
 
-## For Browser or sandboxes.
+## For Browser or code sandboxes.
 
 ### Installing Vue-Router
 
@@ -16,7 +17,7 @@ Add vue-router using a `<script>` tag
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 ```
 
-### Setup zircle ui and vue-router
+### Setup zircle-ui and vue-router
 
 * Add [**z-canvas**](/api/z-canvas.html) component in your html.
 * Create some view components.
@@ -82,10 +83,10 @@ Add vue-router using a `<script>` tag
 Check this demo in [JSFiddle](https://jsfiddle.net/tinchox5/g39omwxv/) 
 
 #### See: 
-- [`z-canvas`](/api/z-canvas.html)
-- [`z-spot`](/api/z-spot.html)
-- [`$zircle.config()`](/api/public-api.html#config-definition)
-- [`$zircle.setView()`](/api/public-api.html#setview-viewname)
+- [**z-canvas**](/api/z-canvas.html)
+- [**z-spot**](/api/z-spot.html)
+- [**$zircle.config()**](/api/public-api.html#config-definition)
+- [**$zircle.setView()**](/api/public-api.html#setview-viewname)
 
 ## For NPM or vue-cli
 
@@ -111,7 +112,7 @@ new Vue({
 }).$mount('#app')
 ```
 
-### Setup zircle ui and vue-router
+### Setup zircle-ui and vue-router
 
 Steps:
 
@@ -177,8 +178,8 @@ Create **foo** and **bar** views on the **src/components/** folder:
 Check this example on [CodeSandbox](https://codesandbox.io/s/2x39p49kmn)
 
 #### See: 
-- [`z-canvas`](/api/z-canvas.html)
-- [`z-spot`](/api/z-spot.html)
-- [`$zircle.config()`](/api/public-api.html#config-definition)
-- [`$zircle.setView()`](/api/public-api.html#setview-viewname)
+- [**z-canvas**](/api/z-canvas.html)
+- [**z-spot**](/api/z-spot.html)
+- [**$zircle.config()**](/api/public-api.html#config-definition)
+- [**$zircle.setView()**](/api/public-api.html#setview-viewname)
 

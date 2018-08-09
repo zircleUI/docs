@@ -3,7 +3,7 @@ We are going to use [**vue-cli 3**](https://cli.vuejs.org/) to scalfold the **sm
 
 If you have some experience with vue.js you can easily adapt this tutorial to be used into code sandboxes or browsers. Please check out our [getting started section](/guide/getting-started.html).
 
-In this section we'll learn how to **create a project using vue-cli 3** and how to **install zircle ui**
+In this section we'll learn how to **create a project using vue-cli 3** and how to **install zircle-ui**
 ### Create a vue proyect using vue-cli 3
 Let's start, to install **vue-cli 3**, open your terminal and type:
 
@@ -40,9 +40,9 @@ Vue-cli will create a new folder called **'smart-home'** with the struture and f
     └── main.js
 ```
 
-### Install **zircle ui**
+### Install **zircle-ui**
 
-Now, it is time to install **zircle ui**, in your terminal go to your smart-home folder and run:
+Now, it is time to install **zircle-ui**, in your terminal go to your smart-home folder and run:
 
 ```bash
 cd smart-home
@@ -67,6 +67,6 @@ If the default port 8080 is used, Vue will choose another. See your terminal to 
 
 :::
 
-### See: 
-- [Guide: getting started](/guide/getting-started.html)
+### See
+- [**Guide: getting started**](/guide/getting-started.html)
 

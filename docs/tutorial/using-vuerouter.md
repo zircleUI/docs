@@ -14,7 +14,7 @@ In other projects based on vue-cli simply accept to *Install Vue-Router* in the 
 
 ## Edit App.vue file
 
-```vue{5-8,18,27}
+```vue{5-8,18,21}
 <template>
   <z-canvas :views='$options.components'></z-canvas>
 </template>
@@ -33,16 +33,9 @@ export default {
     maps: () => import('./views/maps')
   },
   router,
-  data () {
-    return {
-      list: {roomliving, three, two},
-      state: this.$zircle.getState()
-    }
-  },
   mounted () {
     this.$zircle.config({
-      router,
-      debug: true
+      router
     })
     this.$zircle.setView('home')
   }
@@ -53,3 +46,9 @@ export default {
 @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 </style>
 ```
+
+### See
+- [**Guide: Using vue-router**](/guide/using-vue-router.html)
+- [**z-canvas**](/api/z-canvas.html)
+- [**$zircle.config()**](/api/public-api.html#config-definition)
+- [**$zircle.setView()**](/api/public-api.html#setview-viewname)

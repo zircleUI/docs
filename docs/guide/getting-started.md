@@ -1,15 +1,19 @@
 # Getting Started
 
+::: tip
+The guide assumes intermediate level knowledge of HTML, CSS, JavaScript and Vue.js. To start learning Vue.js I suggest its [official documentation site](https://vuejs.org) 
+:::
+
 ## Installation
 
 ### Direct download 
-Just download **zircle ui** from [Github](https://github.com/zircleUI/zircleUI/tree/master/dist).
+Just download **zircle-ui** from [Github](https://github.com/zircleUI/zircleUI/tree/master/dist).
 
 ### Content delivery networks (CDN)
-Include `https://unpkg.com/zircle` in your project with `<script>` tag. With CDN you will have the latest version of **zircle ui** as soon as it is published to NPM. You can also browse the source of the npm package at [https://unpkg.com/zircle/](https://unpkg.com/zircle/) 
+Include `https://unpkg.com/zircle` in your project with `<script>` tag. With CDN you will have the latest version of **zircle-ui** as soon as it is published to NPM. You can also browse the source of the npm package at [https://unpkg.com/zircle/](https://unpkg.com/zircle/) 
 
 ### NPM or Yarn
-NPM or Yarn are the recommended installation method of **zircle ui** if you are building medium to large scale applications. 
+NPM or Yarn are the recommended installation method for **zircle-ui**, if you are building medium to large scale applications. 
 
 Create a project folder and inside it run:
 
@@ -20,24 +24,24 @@ yarn add zircle
 ```
 
 ::: tip
-- Install Vue.js before **zircle ui**.
+- [Install Vue.js](https://vuejs.org/v2/guide/installation.html) before **zircle-ui**.
 
-- For small applications or prototyping you can use **zircle ui** directly into a browser and for more complex apps you can use **zircle ui** with [Single File Components (SFC)](https://vuejs.org/v2/guide/single-file-components.html). 
+- For small applications or prototyping you can directly use **zircle-ui** into a browser and for more complex apps you can use **zircle-ui** with [Single File Components (SFC)](https://vuejs.org/v2/guide/single-file-components.html). 
 :::
 
 #### See:
-- [Tutorial - Creatin your first app](/tutorial/creating.html)
+- [**Tutorial - Creating your first app**](/tutorial/creating.html)
 
 ## Quick start
-There are several options to setup and start using **zircle ui**.
+There are several options to setup and start using **zircle-ui**.
 
 ### Code Sandbox 
-The easiest way to try and start using **zircle ui** is using the [JSFiddle sandbox](https://jsfiddle.net/tinchox5/37mr5324/) or the [Codepen sandbox](https://codepen.io/zircle/pen/MExYRv)
+The easiest way to try and start using **zircle-ui** is using the [JSFiddle sandbox](https://jsfiddle.net/tinchox5/37mr5324/) or the [Codepen sandbox](https://codepen.io/zircle/pen/MExYRv)
 
-For **zircle ui** projects based on vue-cli 3 you can try the [CodeSandbox](https://codesandbox.io/s/my0ol78l08)
+For **zircle-ui** projects based on vue-cli 3 you can try the [CodeSandbox](https://codesandbox.io/s/my0ol78l08)
 
 ### Browser
-After you have installed **zicle ui** using [direct download](#direct-download) or [CDN](#content-delivery-networks-cdn), the following starter template creates a Vue Instance and provides `<z-canvas>` component to start the development of your **zircle ui** application.
+After you have installed **zicle ui** using [direct download](#direct-download) or [CDN](#content-delivery-networks-cdn), the following starter template creates a Vue Instance and provides `<z-canvas>` component to start the development of your **zircle-ui** application.
 
 ```html
 <!DOCTYPE html>
@@ -75,13 +79,13 @@ After you have installed **zicle ui** using [direct download](#direct-download) 
 ```
 
 #### See: 
-- [`z-canvas`](/api/z-canvas.html)
-- [`$zircle.setView()`](/api/public-api.html#setview-viewname)
+- [**z-canvas**](/api/z-canvas.html)
+- [**$zircle.setView()**](/api/public-api.html#setview-viewname)
 
 ### Single File Components and vue-cli
-As Vue documentation explains with the previous setup you can work very well for small to medium-sized projects. However, in more complex projects it is better use [Single File Components (SFC)](https://vuejs.org/v2/guide/single-file-components.html).
+As Vue documentation explains, with the previous setup you can work very well for small to medium-sized projects. However, in more complex projects it is better tp use [Single File Components (SFC)](https://vuejs.org/v2/guide/single-file-components.html).
 
-Vue-cli provides you with an powerful and easy tool to develop complex projects. So, after you have installed and run vue-cli as it is described in the [official Vue cli docs](https://cli.vuejs.org/guide/installation.html), you can install **zircle ui** with [NPM or Yarn](#package-managers-npm-or-yarn) and add the following code to your vue-cli project:
+Vue-cli is a powerful tool to develop complex projects. So, after you have installed and run vue-cli as it is described in the [official Vue cli docs](https://cli.vuejs.org/guide/installation.html), you can install **zircle-ui** with [NPM or Yarn](#package-managers-npm-or-yarn) and add the following code to your vue-cli project:
 
 In the `main.js` file add this code:
 ```js{3-5}
@@ -126,10 +130,10 @@ Create the `home.vue` view in the **/components** folder:
 ```
 
 #### See: 
-- [`z-canvas`](/api/z-canvas.html)
-- [`$zircle.setView()`](/api/public-api.html#setview-viewname)
-- [Tutorial - Setup main files](/tutorial/setup-files.html)
+- [**z-canvas**](/api/z-canvas.html)
+- [**$zircle.setView()**](/api/public-api.html#setview-viewname)
+- [**Tutorial - Setup main files**](/tutorial/setup-files.html)
 
 ::: tip
-Before start a **zircle ui** project with vue-cli you can play online with [CodeSandbox](https://codesandbox.io/s/my0ol78l08)
+Before starting a **zircle-ui** project with vue-cli you can play online with [CodeSandbox](https://codesandbox.io/s/my0ol78l08)
 :::

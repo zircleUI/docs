@@ -7,7 +7,7 @@ sidebarDepth: 2
 ## Description
 <img :src="$withBase('/z-list.png')" style="clear: right; margin-top: 20px; float:right" width="250px"/>
 
-This component manages a list or collection of items. It works only inside `z-view` component and you need to use with the `z-view` `slot.extension`. In further releases it would be possible to extend `z-list` to `z-spot` and `z-dialog`.
+This component manages a list or collection of items. It works only inside `z-view` component and you need to use with the `z-view` **slot.extension**. In further releases it would be possible to extend `z-list` to [z-spot](/api/z-spot.html) and [z-dialog](/api/z-dialog.html).
 
 ### Populate your list
 `z-list`has a property named `items` to manage a list of items. The list has to be an `array`.
@@ -25,9 +25,11 @@ As you maybe have noted, each item is a `z-spot` so its same properties applies 
 ### Items view
 It is possible to define a view to go for each item. To achieve taht you need to use the property `toView`. This property has the same behavouir that `z-spot`. Thats means that you can define a view using just a `string`or you can pass params using an `object`.
 
-In the tutorial there are to examples if you want to see in action.[>](#)
+In the tutorial there are some examples if you want to see it in action:
+- [Rooms](/tutorial/rooms-view.html)
+- [Devices](/tutorial/devices-view.html)
 
-In case you pass `params` **zircle ui** allows to catch the params given using `$zircle.getParams()`in you items view.
+In case you pass `params` **zircle-ui** allows to catch the params given using [$zircle.getParams()](/api/public-api.html#getparams-definition) in you items view.
 
 
 ## Usage 

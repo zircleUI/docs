@@ -5,20 +5,20 @@ sidebarDepth: 2
 # z-dialog
 
 ## Description
-This component show a dialog on the top of any **zircle ui** component when is invoked. Inside it you can nest only `<z-spot>` components. In further realeases this could be extended to another **zircle ui** components.
+This component show a dialog on the top of any **zircle-ui** component when is invoked. Inside it you can only nest [z-spot](/api/z-spot.html) components. In further realeases this could be extended to another **zircle-ui** components.
 
-By default, `z-dialog` will be open until the user manually closed it.
+By default, `z-dialog` will remains open until the user manually close it.
 
 This is a `modal` view.
  
 ### Self close dialog
-However it is possible to add the property `selfClose` and in this case the `z-dialog` will be closed after 3 seconds when a circular `z-slider` is completed and the `z-dialog` event `done` is triggered. This is done by a vue `$emit`.
+However it is possible to add the property `selfClose` and in this case the `z-dialog` will be closed after 3 seconds when a circular `z-slider` is completed and the `z-dialog` event `done` is [emitted]((https://vuejs.org/v2/api/#vm-emit).
 
 ```html
 <z-dialog 
   v-if="dialog"
   self-close
-  @done = "dialog = false">
+  @done= "dialog = false">
 </z-dialog>
 ```
 
@@ -54,11 +54,18 @@ data () {
 
 | Prop | Type | Default value | Required | Description
 | :--- | :--- | :--- | :--- | :--- |
-| `selfClose` | Boolean | false | No | When it is true an the component will self closed after a while and a slider is shown.
+| `selfClose` | Boolean | false | No | When it is true an the component will self closed after a while.
 
 ## Slots
 
 | Slot | Description
 | :--- | :--- |
 | `default` | Default Vue Slot. It is used to put any kind of content such as text, icons, etc.
+
+## Events
+
+| event | Description
+| :--- | :--- |
+| `$emit('done') | This event is emitted in case the property `selfClose` is `true` and the progress slider has been completed. You can listen this event (`:done=yourMethod()`) to perfom some action. For example: [tutorial - logs view](/tutorial/logs-view.html)
+
 

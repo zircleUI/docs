@@ -8,10 +8,9 @@ We are using a `slot.media` with youtube to simulate a channel.
 ### References
 
 Most of code refers to:
-- Family view
-- Home view
-- Slot.media
-- Slot.extension
+- [Family view](/tutorial/family-view.html)
+- [Home view](/tutorial/home-view.html)
+
 
 ### Code
 Create a `tv.vue` file inside the `views` folder and paste the following code:

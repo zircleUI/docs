@@ -4,7 +4,7 @@ sidebar: auto
 
 # Contribute
 
-First of all, thank you for being interested in contributing to **zircle ui**. 🙏 
+First of all, thank you for being interested in contributing to **zircle-ui**. 🙏 
 
 A lot of things could be improved and enriched with you collaboration no matter if you are a experienced developer or not. Below you will find just some guidelines for inspiration.
 
@@ -29,7 +29,7 @@ Reference your PR to a related issue and provide a description of the changes pr
 ### Developer friendly
 You will need Node.js version 8+ installed.
 
-Open a terminal an type:
+Open a terminal and type:
 
 ```sh
 git clone https://github.com/zircleui/zircleui.git
@@ -40,7 +40,7 @@ After cloning the repository, execute:
 npm install
 ```
 
-## Do you like zircle ui?
+## Do you like zircle-ui?
 
 ### Spread the word
 Help to promote the project with you friends, colleagues and the social media.
@@ -50,7 +50,7 @@ Maybe you don't have the habit to star projects on Github, I kindle ask you to d
 
 ### Stay in touch
 
-- Follow **zircle ui** on [Twitter](https://twitter.com/zircle_ui)
+- Follow **zircle-ui** on [Twitter](https://twitter.com/zircle_ui)
 
 - Suscribe to the mailing list.
 

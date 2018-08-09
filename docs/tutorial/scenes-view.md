@@ -121,3 +121,9 @@ That is a very granular formule to defines the angles for our `z-spots`. Dependi
 #### showMe() method
 Finally, we have a method called `showMe()`. This method is activated when a `z-spot` is clicked and runs a timer to increment the `progress` property. When `progress` has reached 40 we simulate that some rules are applied. 
 
+
+### See
+- [**z-view**](/api/z-view.html)
+- [**z-spot**](/api/z-spot.html)
+
+

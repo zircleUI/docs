@@ -4,7 +4,7 @@
 This view simulates the devices present in the living-room. Here we'll learn how to customize `z-view` and to use `z-spot` as a circular **knob** to control the temperature of the air conditioner. Also, we are going to set up some scenes to control de devices.
 
 ## Code
-Create a `livingroom.vue` file inside the `views` folder and paste the following code:
+Create a **livingroom.vue** file inside the `views` folder and paste the following code:
 ```vue
 <<template>
   <z-view
@@ -142,20 +142,33 @@ As you see the knob will only be rendered when the decives is the AC.
 v-bind.sync="device.temp"
 ```
 
-Here you have to pay atention at `v-bind.sync` which is a vue porperty. This allow us to pass our temp object using `two-ways` communication. PLease see this
+Here you have to pay atention at [`v-bind.sync`](https://vuejs.org/v2/guide/components-custom-events.html#sync-Modifier) which is a vue property that allows us to pass and object using two-ways communication.
 
 ```{2}
-vm.devices = [
-  {name: 'AC', state: 'on', temp: {qty: 24, unit: '˚C', min: 18, max: 32}}
-]      
+vm.devices = [{
+  name: 'AC',
+  state: 'on',
+  temp: {
+    qty: 24,
+    unit: '˚C',
+    min: 18, 
+    max: 32
+  }
+}]      
 ```
 
-As you realised we are syncronizing some parameter with knob: the current value, unit, min and max.
+As you realized we are syncronizing some parameter with knob: the current value, unit, min and max.
 
-That is an espacial case, however you can symplify passing just a numerical value in the qty property and knob will works.
+That is an especial case, however you can symplify passing just a numerical value in the qty property and knob will works.
 
 ```
 :qty="23"
 ```
 
-It's time to wire aour view in the app.vue!
+### See
+- [**z-view**](/api/z-view.html)
+- [**z-spot**](/api/z-spot.html)
+
+## Next steps
+It's time to wire up our views in the **App.vue**!
+

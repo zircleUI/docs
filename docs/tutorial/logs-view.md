@@ -4,7 +4,7 @@
 This simple view shows you what happens when the main content is larger than the `z-view` container. Also, the systems logs could be deleted pressing the reset button. A `z-dialog` will be activated to confirm that.
 
 ### Reference
-- rooms view
+- [Rooms view](/tutorial/rooms-view.html)
 
 ### Code
 Create a `logs.vue` file inside the `views` folder and paste the following code:

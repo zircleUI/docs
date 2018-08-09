@@ -13,7 +13,7 @@ Inside it you can nest many others components, such as: [z-spot](/api/z-spot.htm
 
 
 ### Modify the size of z-view
-By default the diameter of the `z-view` is `xxl` which is the largest size that **zircle ui** provides. To change it, simply use the property `size` with any of the following values: 
+By default the diameter of the `z-view` is `xxl` which is the largest size that **zircle-ui** provides. To change it, simply use the property `size` with any of the following values: 
 
 - `xl`, 
 - `l` or `large`, 
@@ -22,7 +22,7 @@ By default the diameter of the `z-view` is `xxl` which is the largest size that 
 - `xs`, 
 - `xxs`
 
-Note that **zircle ui** is responsive so, the diameter changes according the width of the browser's viewport when the app is in `full` mode. In `mixed` mode the diameter changes according the width of the canvas.
+Note that **zircle-ui** is responsive so, the diameter changes according the width of the browser's viewport when the app is in `full` mode. In `mixed` mode the diameter changes according the width of the canvas.
 
 ### Organize your content
 In a `z-view` you can add different kind of contents, such as: text, forms, images, graphs, videos, etc. To organize them `z-view` provides a bunch of slots and properties.
@@ -31,7 +31,7 @@ In a `z-view` you can add different kind of contents, such as: text, forms, imag
 Tipically, the content you put inside a `z-view` will be catched by a default Vue slot. In case the content is larger than the view container, a [circular scroll](/api/z-scroll.html) is activated.
 
 #### slot.extension
-This slot allows to nest other **zircle ui** components. If you want to add just one element add the slot name in the element. In case you need to add more elemntes, you can create a wrap element with the slot name.
+This slot allows to nest other **zircle-ui** components. If you want to add just one element add the slot name in the element. In case you need to add more elemntes, you can create a wrap element with the slot name.
 
 ```html
 <!-- Nest a single component -->
@@ -78,7 +78,6 @@ In case you want to show both a regular content and a rich media, you should put
 `z-view` has a child component named `z-slider` that allow to show a circular progress bar around its perimeter. You need to set `true` the property `slider`and use the property `progress` with a value.
 
 ## Usage
-```
 
 ```html
 <z-view
@@ -86,7 +85,7 @@ In case you want to show both a regular content and a rich media, you should put
 	:progress= '45'
 	label: 'Home's view'
 	label-pos: 'top'
-	image-path: '/image.png
+	image-path: '/image.png'
 	>
 	<!-- Default slot -->
 	Hello world!
@@ -102,8 +101,8 @@ In case you want to show both a regular content and a rich media, you should put
 | `size` | String|  'xxl' | No | Set `z-view`'s diameter.
 | `label` | String|  | No | Provides a label which is situated at the bottom of the component. 
 | `label-pos` | String| 'bottom'  | No | Situates the label at left, right, top or bottom position of `z-view` 
-| `slider` | Boolean | false | No | When it is `true` a circular progress bar ,[z-slider](#z-slider), is shown. 
-| `progress` | Number | 0 | No | Progress works when [z-slider](#z-slider) is enabled and gives its initial value
+| `slider` | Boolean | false | No | When it is `true` a circular progress bar, [z-slider](/api/z-slider.html), is shown. 
+| `progress` | Number | 0 | No | Progress works when [z-slider](/api/z-slider.html) is enabled and gives its initial value.
 | `imagePath` | String |  | No | To add the path of a background image. 
 
 
@@ -111,7 +110,7 @@ In case you want to show both a regular content and a rich media, you should put
 
 | Slot | Description
 | :--- | :--- |
-| `default` | Default Vue slot. It is used to put any kind of content such as text, icons, etc. If its content is larger than the view container, a circular scrollbar, [z-view-scroll](#z-view-scroll), is activated.
+| `default` | Default Vue slot. It is used to put any kind of content such as text, icons, etc. If its content is larger than the view container, a circular scrollbar, [z-scroll](/api/z-scroll.html), is activated.
 | `media` | To insert videos, maps or another rich media content.
-| `extension` | To nest **zircle ui** components around the `z-view`.
+| `extension` | To nest **zircle-ui** components around the `z-view`.
 

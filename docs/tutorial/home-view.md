@@ -93,7 +93,7 @@ Always you define a view you have to use `z-view` as the main component. This is
 
 - **Label prop:** We use the `label` property to add a title to the view: "Smart Home Dashboard".
 
-- **Size prop:** By design, `z-view` adopts the largest diameter available in **zircle ui**. However, depending on your needs you can use the property `size` and choose any of the possible values: 
+- **Size prop:** By design, `z-view` adopts the largest diameter available in **zircle-ui**. However, depending on your needs you can use the property `size` and choose any of the possible values: 
   - **xxl**
   - **xl**
   - **l** or **large**
@@ -105,7 +105,7 @@ Always you define a view you have to use `z-view` as the main component. This is
 - **Default slot:** As you see there is some content that appears inside the `z-view` container. This content is catched by a vue `slot.default`. In this case we put a welcome message with some mocked data: current time, outside and inside temperature and the current active scene.
 You can learn more about **slots** [ on the official Vue documentation](https://vuejs.org/v2/guide/components-slots.html).
 
-- **Extension slot:** After that, we nest some **zircle ui** components in `z-view` using the `z-view` **slot.extension**. In this case we create a wrapper using a  `div` element with the **slot.extension** and inside it we put several `z-spot`.  In case you have just on **zircle ui** component to nest in, you can add `slot="extension"` in the zircle component. 
+- **Extension slot:** After that, we nest some **zircle-ui** components in `z-view` using the `z-view` **slot.extension**. In this case we create a wrapper using a  `div` element with the **slot.extension** and inside it we put several `z-spot`.  In case you have just on **zircle-ui** component to nest in, you can add `slot="extension"` in the zircle component. 
 For example:
 ```html
 <z-view>
@@ -125,7 +125,7 @@ As you see, each `z-spot` has its own properties: `angle`, `distance`, `size`, `
 - **Distance prop:** The property `distance` measures the percentaje of distance of the parent component (in this case `z-view`). 
 All our z-spots have a value of '120'. That it means that the center of the `z-spot` will be at 120% of distance of the center of `z-view`. If you don't specify the property `distance`, the value by default will be '100'.
 
-- **Size prop:** `size` is another important property. It represents the diameter of the `z-spot`. As **zircle ui** is responsive, we can't specify a numerical value. Instead the values are:
+- **Size prop:** `size` is another important property. It represents the diameter of the `z-spot`. As **zircle-ui** is responsive, we can't specify a numerical value. Instead the values are:
   - **xxl**
   - **xl**
   - **l** or **large**
@@ -143,17 +143,17 @@ By default, the size of `z-spot` is **medium**.
 - **LabelPos prop:** You can positionate your labels with the `label-pos` property. The options are **top**, **left**, **bottom** (default), **right**
 
 ### CSS Styles
-In some `z-spot` we used a **`style` attributte** to customize its appearence. Although, you can add whatever css style you desire, there are some very usefull: **border-color**, **background-color** and **color**. You can put the color you want or [use the css variables](/guide/themes-styles-and-colors.html) provided by **zircle ui**
+In some `z-spot` we used a **`style` attributte** to customize its appearence. Although, you can add whatever css style you desire, there are some very usefull: **border-color**, **background-color** and **color**. You can put the color you want or [use the css variables](/guide/themes-styles-and-colors.html) provided by **zircle-ui**
 
 For other projects you can use a **`class` attributte** as well
 
 That's all. Save the **home.vue** file and check your browser.
 
 
-### See:
-- [z-view](/api/z-view.html)
-- [z-spot](/api/z-spot.html)
-- [Themes and styles](/guide/themes-styles-and-colors.html)
+### See
+- [**z-view**](/api/z-view.html)
+- [**z-spot**](/api/z-spot.html)
+- [**Themes and styles**](/guide/themes-styles-and-colors.html)
 
 
 

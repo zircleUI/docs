@@ -1,11 +1,12 @@
 # Device
 
 ### Description
-This is a generic view to display the device category selected in the **devices** view. This view retrieves the params given and shows them thanks to the **zircle ui** action `getParams()`
+This is a generic view to display the device category selected in the **devices** view. This view retrieves the params given and shows them thanks to the **zircle-ui** action `getParams()`
 
 ### Reference
-- rooms
-- public API
+- [Rooms view](/tutorial/rooms-view.html)
+- [getParams()](api/public-api.html#getparams-definition)
+
 
 ### Code
 Create a `device.vue` file inside the `views` folder and paste the following code:

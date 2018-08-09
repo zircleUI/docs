@@ -1,8 +1,8 @@
 # Wrapping views
 
-Was a long journey, but we are arriving to the final. We have created a lot of views trying to show most of the **zircle ui** features. Now, we have to wire up our views into the **App.vue** file.
+Was a long journey, but we are arriving to the final. We have created a lot of views trying to show most of the **zircle-ui** features. Now, we have to wire up our views into the **App.vue** file.
 
-Replace the App.vue code with this and voila! Our app should be working right now :)
+Replace the **App.vue** code with this and voila! Our app should be working right now :)
 
 
 ```vue result
@@ -31,3 +31,8 @@ export default {
 </style>
 
 ```
+
+### See
+- [**Guide: getting started**](/guide/getting-started.html#single-file-components-and-vue-cli)
+- [**z-canvas**](/api/z-canvas.html)
+- [**$zircle.setView()**](/api/public-api.html#setview-viewname)

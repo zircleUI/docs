@@ -8,10 +8,8 @@ We are going to use a `z-list` component. Besides that, we are going to pass an 
 ### References
 
 Most of code refers to:
-- Rooms view
-- Home view
-- Slot.media
-- Slot.extension
+- [Rooms view](/tutorial/rooms-view.html)
+- [Home view](/tutorial/home-view.html)
 
 ### Code
 Create a `devices.vue` file inside the `views` folder and paste the following code:

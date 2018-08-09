@@ -1,5 +1,5 @@
 # z-list-pagination
 
-Used internally by `z-list`
+Internally used by [z-list](/api/z-list.html).
 
-This child component works with [z-list](#z-list) and displays a circular dot pagination.
+This child component works with `z-list` and displays a circular dot pagination.

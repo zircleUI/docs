@@ -4,7 +4,7 @@ This view use the third-party library [Smootie-charts](http://smoothiecharts.org
 
 
 ### Reference
-- family view
+- [Family view](/tutorial/family-view.html)
 
 ### Code
 Create a `status.vue` file inside the `views` folder and paste the following code:

@@ -12,5 +12,5 @@ features:
 - title: Circles everywhere
   details: Breaking away from the conventional UI with a circular UI Kit and customizable themes and styles.
 - title: Responsive
-  details: Zircle ui works pretty well on mobile devices and big screens. 
+  details: Zircle-ui works pretty well on mobile devices and big screens. 
 ---

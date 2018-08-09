@@ -1,7 +1,7 @@
 # Familiy
 
 ## Description
-This view shows the location of the family members in a [**leaflet.js**](#) map. We'll learn how to integrate three-party libraries into **zircle ui** using the `slot.media` of `z-view`.
+This view shows the location of the family members in a [**leaflet.js**](#) map. We'll learn how to integrate three-party libraries into **zircle-ui** using the `slot.media` of `z-view`.
 
 ## Code
 You know what todo. Create a `family.vue` file inside the `views` folder and paste the following code:
@@ -105,9 +105,15 @@ Then, in our **family-view** file, import the leaflet styleshet
 </style>
 ```
 
-Zircle ui allows to recursively use the same view, but leaflt don't beacuse need to have a unique id for its maps. In those cases you can use the **zircle ui action** `getCurrentVireName()` as map id, that always is unique.
+zircle-ui allows to recursively use the same view, but leaflt don't beacuse need to have a unique id for its maps. In those cases you can use the **zircle-ui action** `getCurrentVireName()` as map id, that always is unique.
 
-Most of this lines are related to configurate the leaflet map and interact with **zircle ui**.
+Most of this lines are related to configurate the leaflet map and interact with **zircle-ui**.
 
 The rest of the code should be familiar to you :)
+
+
+### See
+- [**z-view**](/api/z-view.html)
+- [**z-spot**](/api/z-spot.html)
+
 

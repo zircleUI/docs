@@ -106,7 +106,7 @@ Inside `z-list` we use again our flexible `z-spot` to show each room. There are 
 - **toView property:**
 It is possible to define a view to go for each item. To achieve that you need to use the property `toView`. We've already seen you can define a new view using just a `string` with the view name or you can pass params using an `object`.
 
-In case you pass `params` **zircle ui** allows to catch the params given using the **zircle ui** action `getParams()` in your new view.
+In case you pass `params` **zircle-ui** allows to catch the params given using the **zircle-ui** action `getParams()` in your new view.
 
 - **image-path prop:** we use for first time the `image-path` prop. Alternatively, we can use an `image slot`. In those cases the image will be treated as a background.
 
@@ -114,5 +114,12 @@ In case you pass `params` **zircle ui** allows to catch the params given using t
 It is time to learn `z-dialog`. This component will show a modal dialog when is activated. It has a **self-close** property that will close the dialog after a certain time. Here we use it to simulate a modal confirming the action of add a new room.
 
 `z-dialog` will be rendered in case the variable **opendialog** is true. As we use the property **selfColse**, the dialog will closed after a few seconds or when the user press any of the buttons.
+
+
+### See
+- [**z-list**](/api/z-list.html)
+- [**z-dialog**](/api/z-dialog.html)
+- [**z-view**](/api/z-view.html)
+- [**z-spot**](/api/z-spot.html)
 
 

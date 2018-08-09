@@ -1,8 +1,8 @@
 module.exports = {
   base: '/docs/',
   lang: 'en-US',
-  title: 'zircle ui',
-  description: 'A frontend library for developing zoomable user interfaces',
+  title: 'zircle-ui',
+  description: 'A frontend library to develop zoomable user interfaces',
   head: [
     ['meta', { name: 'google-site-verification', content: 'lqlMbv1DObhjKSaf9r5ZaJpaj7FVtJ-mxNYH5NmCcwg' }],
     ['meta', { name: 'keywords', content: 'javascript, library, vuejs, zui, zoomable, ui, ux, user-interface, user-experience, circle, circular' }],

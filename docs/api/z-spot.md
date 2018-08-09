@@ -7,7 +7,7 @@ sidebarDepth: 2
 ## Description
 <img :src="$withBase('/z-spot.png')" style="clear: right; margin-top: 20px; float:right" width="250px"/>
 
-By default this component allows to zoom-in to a new view. In other words is a zoomable component to go to another view. Inside a `z-spot` you can nest other [z-spot](#z-spot). Currently, `z-list` is not available for `z-spot`  
+By default this component allows to zoom-in to a new view. In other words is a zoomable component to go to another view. Inside a `z-spot` you can nest other `z-spot`. Currently, [z-list](/api/z-list.html) is not available for `z-spot`  
 
 ### Zoom-in to a new view 
 By default, `z-spot` is made to perform a zoom transition to another view. You need to use the property `to-view` indicating the name of the view you want to go. Also, is it possible to pass params that work with or without vue-router.
@@ -24,7 +24,7 @@ to-view: "{
 }"
 ```
 
-Then in the target view, you can retrieve the params using `$zircle.getParams()`
+Then, in the target view **device** you can retrieve those params using [**$zircle.getParams()**](/api/public-api.html#getparams-definition) or **$router.params** if you [use vue-router](/guide/using-vue-router.html).
 
 ### Positioning
 `z-spot` is positionated according its parent component (a `z-view`or a `z-spot`). Having that in mind, you need to use two properties: `angle` and `distance`.
@@ -65,7 +65,7 @@ To enabled it set the property `knob` as `true` and optionally provide its initi
 
 You may need to customize the knob values: range values, unit displayed and where to show the current value. In that case, you can pass an `object`.
 
-Here you have to pay atention at [v-bind.sync](#) which is a vue property that allows us to pass and object using two-ways communication.
+Here you have to pay atention at [v-bind.sync](https://vuejs.org/v2/guide/components-custom-events.html#sync-Modifier) which is a vue property that allows us to pass and object using two-ways communication.
 
 As [Vue indicates](https://vuejs.org/v2/guide/components-custom-events.html#sync-Modifier) you can't use `v-bind.sync` with a literal object, such as `v-bind.sync=”{ qty: 24, unit: '˚C', min: 18, max: 32 }”`, you need to use an object data.
 
@@ -80,6 +80,12 @@ As [Vue indicates](https://vuejs.org/v2/guide/components-custom-events.html#sync
 vm.temperature = {qty: 24, unit: '˚C', min: 18, max: 32}
 ```
 
+- **qty** pass a numerical value
+- **unit** pass a string with the unit format
+- **min** set the min value range
+- **max** set the max value range
+- **pos** positionate the knob label `inside`the z-spot container or `outside` it
+
 ### Organize your content
 As happens with `z-view`, in a `z-spot` you can place different kind of contents. However media is not available.
 
@@ -87,7 +93,7 @@ As happens with `z-view`, in a `z-spot` you can place different kind of contents
 Tipically, the content you put inside a `z-spot` will be catched by a default Vue slot. In case the content is larger than the view container, it will be hidden. 
 
 #### slot.extension
-This slot allows to nest other **zircle ui** components. If you want to add just one element add the slot name in the element. In case you need to add more elementes, you can create a wrap element with the slot name.
+This slot allows to nest other **zircle-ui** components. If you want to add just one element add the slot name in the element. In case you need to add more elementes, you can create a wrap element with the slot name.
 
 #### property imagePath
 In case you want to add an image background `z-view` offers two options: the **`slot.image`** or the property **`imagePath`**.
@@ -143,13 +149,15 @@ OYou can see a diagram that shows how the content is placed. The `slot.image` is
 | `imagePath` | String | primary | False | Use this mixin to provide a path to an image.
 | `label` | String | primary | False | This mixin provides a label which is situated at the bottom of the view. 
 | `knob` | Boolean | False | No | When it is `true` a range knob is shown.
+| `qty` | Number | 0 | No | Qty works when knob is enabled giving its initial value
+| `v-bind.sync` | Object |  | No | v-bind.sync enable a “two-way binding” for knob passing a defined object with this properties: **qty**, **unit**, **max**, **min**, **pos**.
 | `slider` | Boolean | False | No | When it is `true` a circular slider is shown.
-| `progress` | Number | 0 | No | progress works when range or slider are enabled and gives them the initial value
+| `progress` | Number | 0 | No | progress works when slider is enabled giving its initial value.
 
 ## Slots
 
 | Slot | Description
 | :--- | :--- |
 | `default` | Default Vue Slot. It is used to put any kind of content such as text, icons, etc. 
-| `extension` | It is used when you nest other `<z-spot>` components.
+| `extension` | It is used when you nest other `z-spot` components.
 
