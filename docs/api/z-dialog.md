@@ -7,8 +7,10 @@ sidebarDepth: 2
 ## Description
 This component show a dialog on the top of any **zircle ui** component when is invoked. Inside it you can nest only `<z-spot>` components. In further realeases this could be extended to another **zircle ui** components.
 
-By default, `z-dialog` will be open until the user manually closed it. 
+By default, `z-dialog` will be open until the user manually closed it.
 
+This is a `modal` view.
+ 
 ### Self close dialog
 However it is possible to add the property `selfClose` and in this case the `z-dialog` will be closed after 3 seconds when a circular `z-slider` is completed and the `z-dialog` event `done` is triggered. This is done by a vue `$emit`.
 
