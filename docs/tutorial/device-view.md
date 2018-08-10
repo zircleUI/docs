@@ -5,7 +5,7 @@ This is a generic view to display the device category selected in the **devices*
 
 ### Reference
 - [Rooms view](/tutorial/rooms-view.html)
-- [getParams()](api/public-api.html#getparams-definition)
+- [getParams()](/api/public-api.html#getparams-definition)
 
 
 ### Code
