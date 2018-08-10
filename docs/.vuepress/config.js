@@ -186,9 +186,9 @@ module.exports = {
           title: 'CodeSanboxes',
           collapsable: true,
           children: [
-            'Codepen',
-            'JSFiddle',
-            'CodeSanbox'
+            'codepen',
+            'jsfiddle',
+            'codesanbox'
           ]
         },
        /* {
