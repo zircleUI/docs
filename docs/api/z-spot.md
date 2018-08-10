@@ -24,7 +24,7 @@ to-view: "{
 }"
 ```
 
-Then, in the target view **device** you can retrieve those params using [**$zircle.getParams()**](/api/public-api.html#getparams-definition) or **$router.params** if you [use vue-router](/guide/using-vue-router.html).
+Then, in the target view **device** you can retrieve those params using [**$zircle.getParams()**](/api/public-api.html#getparams-definition) or [**$route.params**](https://router.vuejs.org/api/#the-route-object) if you [use vue-router](/guide/using-vue-router.html).
 
 ### Positioning
 `z-spot` is positionated according its parent component (a `z-view`or a `z-spot`). Having that in mind, you need to use two properties: `angle` and `distance`.

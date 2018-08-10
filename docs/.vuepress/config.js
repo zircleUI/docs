@@ -168,18 +168,43 @@ module.exports = {
       '/examples/': [
         {
           title: 'Examples',
+          collapsable: false
+        },
+        {
+          title: '',
           collapsable: false,
           children: [
+            'smart-home',
             'vuejs-ecosystem',
             'counter',
             'zooming-slider',
             'cuba-libre-recipe',
-            'fruit-basquet',
-            'themes-and-colors-selector',
-            'zircle-with-vue-router',
-            'zircle-without-router'
+            'fruit-basquet'
           ]
-        }
+        },
+        {
+          title: 'CodeSanboxes',
+          collapsable: true,
+          children: [
+            'Codepen',
+            'JSFiddle',
+            'CodeSanbox'
+          ]
+        },
+       /* {
+          title: 'Community',
+          collapsable: true,
+          children: [
+            ''
+          ]
+        },
+        {
+          title: '0.3.3',
+          collapsable: true,
+          children: [
+            ''
+          ]
+        }*/
       ],
       '/contribute/': [
         {

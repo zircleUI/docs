@@ -1,4 +1,4 @@
-# Vue.js Ecosystem
+# Vue.js ecosystem
 
 > This example was made in 2017. For an updated Vue.js Ecosystem visit [vuejs.org](https://vuejs.org)
 
