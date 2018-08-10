@@ -188,7 +188,7 @@ module.exports = {
           children: [
             'codepen',
             'jsfiddle',
-            'codesanbox'
+            'codesandbox'
           ]
         },
        /* {
