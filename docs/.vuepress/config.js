@@ -58,7 +58,7 @@ module.exports = {
         link: '/examples/vuejs-ecosystem'
       },
       {
-        text: 'Contribute',
+        text: 'Contributing',
         link: '/contribute/'
       }
     ],
@@ -174,8 +174,8 @@ module.exports = {
           title: '',
           collapsable: false,
           children: [
-            'smart-home',
             'vuejs-ecosystem',
+            'plant',
             'counter',
             'zooming-slider',
             'cuba-libre-recipe',

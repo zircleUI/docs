@@ -80,7 +80,7 @@ Add vue-router using a `<script>` tag
   </body>
 </html>
 ```
-Check this demo in [JSFiddle](https://jsfiddle.net/tinchox5/g39omwxv/) 
+Check this demo in [Codepen](https://codepen.io/zircle/pen/RxvzVa) 
 
 #### See: 
 - [**z-canvas**](/api/z-canvas.html)
@@ -174,8 +174,6 @@ Create **foo** and **bar** views on the **src/components/** folder:
   </z-view>
 </template>
 ```
-
-Check this example on [CodeSandbox](https://codesandbox.io/s/2x39p49kmn)
 
 #### See: 
 - [**z-canvas**](/api/z-canvas.html)

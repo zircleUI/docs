@@ -7,7 +7,7 @@ The guide assumes intermediate level knowledge of HTML, CSS, JavaScript and Vue.
 ## Installation
 
 ### Direct download 
-Just download **zircle-ui** from [Github](https://github.com/zircleUI/zircleUI/tree/master/dist).
+Just download **zircle-ui** from [Github](https://github.com/zircleUI/zircleUI/tree/master/dist). You need to download the **zircle.umd.js** or the **zircle.umd.min.js** file along with the **zircle.css** file.
 
 ### Content delivery networks (CDN)
 Include `https://unpkg.com/zircle` in your project with `<script>` tag. With CDN you will have the latest version of **zircle-ui** as soon as it is published to NPM. You can also browse the source of the npm package at [https://unpkg.com/zircle/](https://unpkg.com/zircle/) 
@@ -36,9 +36,9 @@ yarn add zircle
 There are several options to setup and start using **zircle-ui**.
 
 ### Code Sandbox 
-The easiest way to try and start using **zircle-ui** is using the [JSFiddle sandbox](https://jsfiddle.net/tinchox5/37mr5324/) or the [Codepen sandbox](https://codepen.io/zircle/pen/MExYRv)
+The easiest way to try and start using **zircle-ui** is using [JSFiddle](https://jsfiddle.net/tinchox5/37mr5324/) or  [Codepen](https://codepen.io/zircle/pen/ypZdWZ)
 
-For **zircle-ui** projects based on vue-cli 3 you can try the [CodeSandbox](https://codesandbox.io/s/my0ol78l08)
+For **zircle-ui** projects based on vue-cli 3 you can try [CodeSandbox](https://codesandbox.io/s/y26p3q79k9)
 
 ### Browser
 After you have installed **zicle ui** using [direct download](#direct-download) or [CDN](#content-delivery-networks-cdn), the following starter template creates a Vue Instance and provides `<z-canvas>` component to start the development of your **zircle-ui** application.
@@ -135,5 +135,5 @@ Create the `home.vue` view in the **/components** folder:
 - [**Tutorial - Setup main files**](/tutorial/setup-files.html)
 
 ::: tip
-Before starting a **zircle-ui** project with vue-cli you can play online with [CodeSandbox](https://codesandbox.io/s/my0ol78l08)
+Before starting a **zircle-ui** project with vue-cli you can play online with [CodeSandbox](https://codepen.io/zircle/pen/ypZdWZ)
 :::

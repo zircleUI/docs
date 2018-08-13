@@ -13,12 +13,12 @@ Replace the **App.vue** code with this and voila! Our app should be working righ
 import Vue from 'vue'
 export default {
   components: {
-    roomliving: () => import('./views/room-living'),
+    living: () => import('./views/living'),
     home: () => import('./views/home'),
     scenes: () => import('./views/scenes'),
     settings: () => import('./views/settings'),
     rooms: () => import('./views/rooms'),
-    maps: () => import('./views/maps')
+    family: () => import('./views/familiy')
   },
   mounted () {
     this.$zircle.setView('home')

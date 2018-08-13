@@ -6,6 +6,7 @@ Since its version **0.9.0**, **zircle-ui** uses the [SASS](https://sass-lang.com
 
 **zircle-ui** provides some themes under the hood. The themes are divided by colors:
 
+- `.color--white`
 - `.color--light-blue`
 - `.color--blue`
 - `.color--green`

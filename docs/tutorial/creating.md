@@ -26,17 +26,13 @@ Vue-cli will create a new folder called **'smart-home'** with the struture and f
 ├── babel.config.js
 ├── package.json
 ├── package-lock.json
+├── node_modules
 ├── public
-│   ├── favicon.ico
-│   └── index.html
 └── src
     ├── App.vue
     ├── assets
-    │   └── logo.png
     ├── components
-    │   └── HelloWorld.vue
-    ├── views
-    │   └── Home.vue
+    ├── Views
     └── main.js
 ```
 

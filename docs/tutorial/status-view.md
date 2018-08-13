@@ -1,6 +1,6 @@
 # Status
 ### Description
-This view use the third-party library [Smootie-charts](http://smoothiecharts.org/) to simulate a status monitor chart. The code should be familliar for you as is similiar to previous views, specially family view.
+This view use the third-party library [Smoothie-charts](http://smoothiecharts.org/) to simulate a status monitor chart. The code should be familliar for you as is similiar to previous views, specially family view.
 
 
 ### Reference
@@ -65,6 +65,13 @@ export default {
   }
 }
 </script>
+```
+#### Smoothie-charts.js
+You have to install Smoothie Charts in your project. Open a terminal, and inside your proyect folder type:
+```sh
+npm install smoothie
+#or
+yarn add smoothie
 ```
 
 ### Wiring up
