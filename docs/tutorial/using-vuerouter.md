@@ -25,7 +25,7 @@ Vue.use(Router)
 const router = new Router()
 export default {
   components: {
-    roomliving: () => import('./views/room-living'),
+    living: () => import('./views/living'),
     home: () => import('./views/home'),
     scenes: () => import('./views/scenes'),
     settings: () => import('./views/settings'),
