@@ -4,7 +4,7 @@
 This view simulates the devices present in the living-room. Here we'll learn how to customize `z-view` and to use `z-spot` as a circular **knob** to control the temperature of the air conditioner. Also, we are going to set up some scenes to control de devices.
 
 ## Code
-Create a **livingroom.vue** file inside the `views` folder and paste the following code:
+Create a **living.vue** file inside the `views` folder and paste the following code:
 ```vue
 <<template>
   <z-view
