@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://zircleui.github.io/docs/</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/guide/</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/examples/vuejs-ecosystem.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/contribute/</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/guide/getting-started.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/guide/design-guide.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/guide/themes-styles-and-colors.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/guide/using-vue-router.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/guide/migration.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/guide/older-version-docs.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/creating.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/setup-files.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-canvas.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-spot.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-list.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-dialog.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-view-manager.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-knob.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-slider.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-scroll.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/z-list-pagination.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/public-api.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/api/internal-api.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/examples/plant.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/examples/counter.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/examples/zooming-slider.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/examples/cuba-libre-recipe.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/examples/fruit-basquet.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/settings-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/home-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/views.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/rooms-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/devices-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/logs-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/device-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/examples/codepen.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/scenes-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/family-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/livingroom-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/bonus.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/tv-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/status-view.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/wrapping-views.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/examples/jsfiddle.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/examples/codesandbox.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/building.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://zircleui.github.io/docs/tutorial/using-vuerouter.html</loc>
+  <lastmod>2018-08-13T18:02:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+</urlset>
