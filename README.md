@@ -1,4 +1,7 @@
 # Zircle-ui documentation site
-The official documentation site for zircle-ui powered by [vuepress](https://vuepress.vuejs.org)
+
+<p align="center">
+  <a href="https://travis-ci.org/zircleUI/docs"><img alt="Build Status" src="https://travis-ci.org/zircleUI/docs.svg?branch=master"></a>
+</p>
 
 Checkout the documentation at [zircle.io](https://zircleui.github.io/docs/)
