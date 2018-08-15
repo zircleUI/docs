@@ -5,5 +5,5 @@
 </iframe>
 
 ::: tip
-'Album' and 'Settings' views are incomplete. You can fork this example and complete the missing views online. 
+'*Album*' and '*Settings*' views are incomplete. You can fork this example and complete the missing views online. 
 :::
