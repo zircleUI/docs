@@ -18,7 +18,7 @@ module.exports = {
   ],
   ga: 'UA-108782619-1',
   serviceWorker: true,
-  theme: 'zircle',
+  // theme: 'zircle',
   themeConfig: {
     repo: 'zircleUI/zircleUI',
     docsRepo: 'zircleUI/docs',
