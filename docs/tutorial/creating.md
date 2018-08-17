@@ -21,7 +21,7 @@ You will be prompted to pick a preset. For purposes of this tutorial choose the 
 
 Vue-cli will create a new folder called **'smart-home'** with the struture and files needed. Something like that:
 
-```sh
+```bash
 .
 ├── babel.config.js
 ├── package.json

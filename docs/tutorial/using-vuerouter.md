@@ -6,7 +6,7 @@ Using Vue-Router is easy and straight forward because Zircle creates the routes 
 
 On your terminal, in the **smart-home** folder, type:
 
-```sh
+```bash
 npm install vue-router
 ```
 

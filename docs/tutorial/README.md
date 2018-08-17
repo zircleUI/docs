@@ -6,15 +6,15 @@ Some previous knowledge of [**vue.js**](https://vuejs.org) is recommended for th
 
 <img :src="$withBase('/smart-home.jpg')" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
-If you don't want to follow this tutorial step-by-step, you can clone the dashboard to follow this tutorial. Open a terminal an type:
+If you don't want to follow this tutorial step-by-step, you can see the [app working in the examples section](/examples/home.html) or you can clone the dashboard to follow this tutorial. Open a terminal an type:
 
-```sh
+```bash
 git clone https://github.com/zircleUI/tutorial.git
 ```
 
-After cloning the repository, execute:
+After cloning the repository, got to the smart-home folder and execute:
 
-```sh
+```bash
 npm install
 ```
 

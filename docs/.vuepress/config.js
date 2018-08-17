@@ -55,7 +55,7 @@ module.exports = {
       },
       {
         text: 'Examples',
-        link: '/examples/vuejs-ecosystem'
+        link: '/examples/home'
       },
       {
         text: 'Contributing',
@@ -174,6 +174,7 @@ module.exports = {
           title: '',
           collapsable: false,
           children: [
+            'home',
             'vuejs-ecosystem',
             'plant',
             'counter',

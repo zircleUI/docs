@@ -60,17 +60,17 @@ You will need Node.js version 8+ installed.
 
 Open a terminal and type:
 
-```sh
+```bash
 git clone https://github.com/zircleui/zircleui.git
 ```
 After cloning the repository, execute:
 
-```sh
+```bash
 npm install
 ```
 
 ### Commonly used NPM scripts
-```sh
+```bash
 # start demo app
 npm run serve
 
@@ -87,7 +87,7 @@ npm run build:zircle
 
 ### Project Structure
 
-```sh
+```bash
 .
 ├── dist
 ├── node_modules

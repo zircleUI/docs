@@ -119,7 +119,7 @@ Previously, in the `settings` view we added a field `angle`in the array `element
 That is a very granular formule to defines the angles for our `z-spots`. Depending on your needs, you can simplify it. For instance, if you want to uniformely distribute a bunch of z-spots around the parent element simply do this: `:angle="(360 / elements.length * index)"`. You can define another angle (180, 270, etc). It's up to you.
 
 #### showMe() method
-Finally, we have a method called `showMe()`. This method is activated when a `z-spot` is clicked and runs a timer to increment the `progress` property. When `progress` has reached 40 we simulate that some rules are applied. 
+Finally, we have a method called `bashowMe()`. This method is activated when a `z-spot` is clicked and runs a timer to increment the `progress` property. When `progress` has reached 40 we simulate that some rules are applied. 
 
 
 ### See

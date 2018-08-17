@@ -68,7 +68,7 @@ export default {
 ```
 #### Smoothie-charts.js
 You have to install Smoothie Charts in your project. Open a terminal, and inside your proyect folder type:
-```sh
+```bash
 npm install smoothie
 #or
 yarn add smoothie

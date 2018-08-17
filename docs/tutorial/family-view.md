@@ -92,7 +92,7 @@ Here we use the `slot.media` to show a leaflet map and interact with it. When yo
 
 #### Leaflet.js
 You have to install leaflet in your project. Open a terminal, and inside your proyect folder type:
-```sh
+```bash
 npm install leaflet
 #or
 yarn add leaflet
