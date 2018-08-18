@@ -11,7 +11,7 @@ branches:
   - master
 
 install:
-    - npm install -g vuepress
+    - npm install -g vuepress@0.11.0
 
 script:
     - npm run docs:build
