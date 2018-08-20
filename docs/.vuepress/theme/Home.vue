@@ -20,7 +20,9 @@
     </div>
     <Content custom/>
     <div class="footer">
-      <a href="https://twitter.com/zircle_ui" style="color: white"><i class="fab fa-twitter fa-2x"></i></a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="https://github.com/zircleui/zircleUI" style="color: white;"><i class="fab fa-github fa-2x"></i></a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="https://www.facebook.com/zircle.page" style="color: white;"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/zircle_ui" style="color: white;"><i class="fab fa-twitter fa-2x"></i></a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+      <a href="https://github.com/zircleui/zircleUI" style="color: white;"><i class="fab fa-github fa-2x"></i></a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+      <a href="https://www.facebook.com/zircle.page" style="color: white;"><i class="fab fa-facebook fa-2x"></i></a>
       <br><br>
       with ❤ by <a href="https://github.com/tinchox5" style="color: white;">@tinchox5</a>
       <br>
