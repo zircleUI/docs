@@ -18,7 +18,7 @@ export default {
     scenes: () => import('./views/scenes'),
     settings: () => import('./views/settings'),
     rooms: () => import('./views/rooms'),
-    family: () => import('./views/familiy')
+    family: () => import('./views/family')
   },
   mounted () {
     this.$zircle.setView('home')
