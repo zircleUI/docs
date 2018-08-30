@@ -26,4 +26,4 @@ During this tutorial we are going to use the following awesome libraries:
 
 - [**Font Awesome**](https://fontawesome.com/)
 - [**Leaflet**](https://leafletjs.com/)
-- [**Smoothie Charts**](http://http://smoothiecharts.org/)
+- [**Smoothie Charts**](http://smoothiecharts.org/)
