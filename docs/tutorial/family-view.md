@@ -1,4 +1,4 @@
-# Familiy
+# Family
 
 ## Description
 This view shows the location of the family members in a [**leaflet.js**](#) map. We'll learn how to integrate three-party libraries into **zircle-ui** using the `slot.media` of `z-view`.
