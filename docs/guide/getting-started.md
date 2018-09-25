@@ -62,7 +62,7 @@ After you have installed **zircle ui** using [direct download](#direct-download)
 
   <script>
     const home = {
-      template: `<z-view>Hello World!<z-view>`
+      template: `<z-view>Hello World!</z-view>`
     }
     new Vue({
       el: '#app',
