@@ -6,7 +6,7 @@ This view simulates the devices present in the living-room. Here we'll learn how
 ## Code
 Create a **living.vue** file inside the `views` folder and paste the following code:
 ```vue
-<<template>
+<template>
   <z-view
   style="border-width: 8px"
   slider
@@ -159,11 +159,6 @@ vm.devices = [{
 
 As you realized we are syncronizing some parameter with knob: the current value, unit, min and max.
 
-That is an especial case, however you can symplify passing just a numerical value in the qty property and knob will works.
-
-```
-:qty="23"
-```
 
 ### See
 - [**z-view**](/api/z-view.html)
