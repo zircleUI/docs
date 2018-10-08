@@ -39,7 +39,7 @@ We need to edit the **App.vue** file and replace the code with this:
   <z-canvas :views='$options.components'></z-canvas>
 </template>
 <script>
-import home from '/views/home'
+import home from './views/home'
 export default {
   components: {
     home
