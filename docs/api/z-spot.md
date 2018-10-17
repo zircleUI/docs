@@ -26,6 +26,84 @@ to-view: "{
 
 Then, in the target view **device** you can retrieve those params using [**$zircle.getParams()**](/api/public-api.html#getparams-definition) or [**$route.params**](https://router.vuejs.org/api/#the-route-object) if you [use vue-router](/guide/using-vue-router.html).
 
+### Using programmatic navigation
+
+In certain occasions you may need to perfom a programmatic navigation to zoom-in to a new view. Something similiar to [vue-router programmatic navigation](https://router.vuejs.org/guide/essentials/navigation.html)
+
+Since **zircle-ui v.1.1.0** it's possible thank to `toView` (a sintax sugar of `setView`).
+
+Regarding its ussage you have to possible options. **One**, you can point the name of your defined view. In those cases the next view will appear in the center of the screen, because it doesn't have a initial `z-spot` to take as position reference.
+
+``` js
+export default {
+  /* ... */
+    this.$zircle.toView('home')  
+  /* ... */
+}
+```
+
+**Two**, in case you want a new view appears from a specific `z-spot` position you'll need to define an object as follows:
+
+``` js
+export default {
+  /* ... */
+    this.$zircle.toView({
+      to: 'name of the new view' // string. Required,
+      fromSpot: reference-of-the-z-spot // Optional,
+      params: { your params } // object. Optional
+    })  
+  /* ... */
+}
+```
+- **to** is the name a the new view you want to navigate. You need to write the name of your defined view (e.g: 'home').
+- **fromSpot** is the reference of the `z-spot` from which the new view will appear. To obtain the `z-spot`reference you should use Vue [**ref / $refs**](https://vuejs.org/v2/api/#ref). 
+
+For instance:
+
+``` vue
+<template>
+	<z-view>
+		<z-spot slot="extension" ref="about" />
+	</z-view>
+</template>
+<script>
+export default {
+  /* ... */
+    this.$zircle.toView({
+      to: 'about',
+      fromSpot: this.$refs.about
+    })  
+  /* ... */
+}
+</script>
+```
+
+- **params** are optional. In case you want to pass params along with the new view, you should obtain them from the `z-spot` from which the new view will appear. In this specific case you can create a new attribute (e.g: colors) and then call it with [**$attrs**](https://vuejs.org/v2/api/#vm-attrs).
+
+
+For instance:
+
+``` vue
+<template>
+	<z-view>
+		<z-spot slot="extension" ref="about" />
+	</z-view>
+</template>
+<script>
+export default {
+  /* ... */
+    this.$zircle.toView({
+      to: 'about',
+      fromSpot: this.$refs.about,
+      params: this.$refs.about.$attrs.colors
+    })  
+  /* ... */
+}
+</script>
+```
+
+
+
 ### Positioning
 `z-spot` is positionated according its parent component (a `z-view`or a `z-spot`). Having that in mind, you need to use two properties: `angle` and `distance`.
 

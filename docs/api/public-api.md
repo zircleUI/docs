@@ -30,6 +30,54 @@ export default {
   - [**Getting started: Quick start**](/guide/getting-started.html#quick-start)
   - [**Tutorial**](/tutorial/)
 
+## toView(viewName || definition)
+- **Params:**
+    - {string} viewName
+
+    or
+
+    - {Object} [definition]
+
+- **Usage:**
+
+`toView`is a sintax sugar of `setView` and it is indicated to perfom programmatic navigation.
+
+Use `toView` in the `script` vue section. 
+
+
+**Option 1**
+
+You can point the name of your defined view. It is case insensitive. In those cases the next view will appear in the center of the screen, because it doesn't have a initial `z-spot` to take as position reference.
+
+``` js{4}
+export default {
+  /* ... */
+    this.$zircle.toView('home')  
+  /* ... */
+}
+```
+
+**Option 2 (recommended)**
+
+In case you want a new view appears from a specific `z-spot` you'll need to define an object as follows:
+
+``` js{4}
+export default {
+  /* ... */
+    this.$zircle.toView({
+      to: 'name of the new view' // string. Required,
+      fromSpot: 'reference of the z-spot' // Optional,
+      params: { your params } // Optional
+    })  
+  /* ... */
+}
+```
+
+
+- **See**: 
+  - [**API. z-spot: Using programmatic navigation**](/api/z-spot.html#using-programmatic-navigation)
+
+
 ## config([definition])
 
 - **Params:**
