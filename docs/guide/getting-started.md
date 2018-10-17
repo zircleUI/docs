@@ -41,7 +41,7 @@ The easiest way to try and start using **zircle-ui** is using [JSFiddle](https:/
 For **zircle-ui** projects based on vue-cli 3 you can try [CodeSandbox](https://codesandbox.io/s/y26p3q79k9)
 
 ### Browser
-After you have installed **zicle ui** using [direct download](#direct-download) or [CDN](#content-delivery-networks-cdn), the following starter template creates a Vue Instance and provides `<z-canvas>` component to start the development of your **zircle-ui** application.
+After you have installed **zircle ui** using [direct download](#direct-download) or [CDN](#content-delivery-networks-cdn), the following starter template creates a Vue Instance and provides `<z-canvas>` component to start the development of your **zircle-ui** application.
 
 ```html
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ After you have installed **zicle ui** using [direct download](#direct-download) 
 
   <script>
     const home = {
-      template: `<z-view>Hello World!<z-view>`
+      template: `<z-view>Hello World!</z-view>`
     }
     new Vue({
       el: '#app',
@@ -108,7 +108,7 @@ In the `App.vue` file add this code:
 </template>
 
 <script>
-  import home from '/components/home'
+  import home from './components/home'
   export default {
     components: {
       home

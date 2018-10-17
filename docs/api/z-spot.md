@@ -132,14 +132,24 @@ In addition, you should add a [vue event](https://vuejs.org/v2/guide/events.html
 
 As happens with `button`, `z-spot`  can be a `knob`. As its name suggests this component displays an interactive circular progress bar with a circular handler. Usefull to create controls like volume, dimmers, etc.
 
-To enabled it set the property `knob` as `true` and optionally provide its initial value using the property `qty`. By default the `z-knob` has a range of 0-100 and show the current value in its label. 
+To enabled it set the property `knob` as `true` and provide its initial value using the property `:qty.sync`. By default the `z-knob` has a range of 0-100 and show the current value in its label. 
 
 ```html
 <z-spot
 	knob
-	qty:"56" >
+	:qty.sync="knobValue" >
 </z-spot>
 ```
+```vue
+...
+data () {
+	return {
+	  knobValue: 78
+	}
+}
+...
+```
+
 
 You may need to customize the knob values: range values, unit displayed and where to show the current value. In that case, you can pass an `object`.
 
@@ -150,12 +160,18 @@ As [Vue indicates](https://vuejs.org/v2/guide/components-custom-events.html#sync
 ```html
 <z-spot
 	knob
-	v-bind.sync: "temperature" >
+	v-bind.sync= "temperature" >
 </z-spot>
 ```
 
 ```js
-vm.temperature = {qty: 24, unit: '˚C', min: 18, max: 32}
+...
+data () {
+	return {
+	  temperature: {qty: 24, unit: '˚C', min: 18, max: 32}
+	}
+}
+...
 ```
 
 - **qty** pass a numerical value
@@ -163,6 +179,9 @@ vm.temperature = {qty: 24, unit: '˚C', min: 18, max: 32}
 - **min** set the min value range
 - **max** set the max value range
 - **pos** positionate the knob label `inside`the z-spot container or `outside` it
+
+**See this codepen: **
+- [Example using knob with `qty:sync`and `v-bind.sync`](https://codepen.io/zircle/pen/EeBXQO)
 
 ### Organize your content
 As happens with `z-view`, in a `z-spot` you can place different kind of contents. However media is not available.
@@ -227,7 +246,7 @@ OYou can see a diagram that shows how the content is placed. The `slot.image` is
 | `imagePath` | String | primary | False | Use this mixin to provide a path to an image.
 | `label` | String | primary | False | This mixin provides a label which is situated at the bottom of the view. 
 | `knob` | Boolean | False | No | When it is `true` a range knob is shown.
-| `qty` | Number | 0 | No | Qty works when knob is enabled giving its initial value
+| `qty.sync` | Number | 0 | No | Qty works when knob is enabled giving its initial value
 | `v-bind.sync` | Object |  | No | v-bind.sync enable a “two-way binding” for knob passing a defined object with this properties: **qty**, **unit**, **max**, **min**, **pos**.
 | `slider` | Boolean | False | No | When it is `true` a circular slider is shown.
 | `progress` | Number | 0 | No | progress works when slider is enabled giving its initial value.
