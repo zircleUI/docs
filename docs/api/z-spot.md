@@ -180,7 +180,7 @@ data () {
 - **max** set the max value range
 - **pos** positionate the knob label `inside`the z-spot container or `outside` it
 
-**See this codepen: **
+**See this codepen:**
 - [Example using knob with `qty:sync`and `v-bind.sync`](https://codepen.io/zircle/pen/EeBXQO)
 
 ### Organize your content
