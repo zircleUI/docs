@@ -4,5 +4,5 @@
 </iframe>
 
 ::: tip
-This example is currently being developed. Visit [the source repo](https://github.com/zircleUI/github-trending-plus)
+This is an experimental example and is currently being developed. Visit [the source repo](https://github.com/zircleUI/github-trending-plus)
 :::
