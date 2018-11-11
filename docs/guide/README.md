@@ -25,7 +25,7 @@ You can try **zircle-ui** to develop a wide range of applications, such as: dash
 In general, using **zircle-ui** should be fine if your application is highly interactive and you need to intuitively view and control information without loosing the user’s attention. 
 
 ## About zircle-ui
-**zircle-ui** is the first [Open Source Project](https://opensource.guide/starting-a-project/) I've made and it was possible thanks to the Open Source community, specially the [Vue](https://vuejs.org) community. In retribution, I've created a project of the highest quality I could within my limitations since I'm not a professional developer. 
+**zircle-ui** is the first [Open Source Project](https://opensource.guide/starting-a-project/) I've made and it was possible thanks to the Open Source community, specially the [Vue](https://vuejs.org) community. 
 
 **Zircle-ui** intends to promote a different approach in the universe of UIs. My main motivation is believing there is room for a new UI/UX not constrained to grid layouts or to squared shapes. 
 
