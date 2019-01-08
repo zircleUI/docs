@@ -3,11 +3,38 @@
 You can use **zircle-ui** with [Vue-Router](https://router.vuejs.org/) in any environment (from sandbox to vue-cli). 
 
 ::: tip
-Using vue-router is easy and straightforward because **zircle-ui** creates the routes automatically based on your views. However, you can define your routes as usual.
 
+**Breaking change:**
+
+Up to **zircle-ui v.1.2.2** the routes were handled automatically based on your views. However, the functionality of the router was pretty limited [https://github.com/zircleUI/zircleUI/issues/19](#19). From  **zircle-ui v.1.2.3** most of the caveats were eliminated. However, you need to define the routes in your Vue router.
+```
+const router = new Router({
+  routes: [
+    { path: '/', redirect: '/home' },
+    { path: '/home', name: 'home', component: home },
+    { path: '/docs/:id', name: 'docs', component: docs },
+    { path: '*', redirect: '/not-found' },
+    { path: '/not-found', name: 'not-found', component: missing }
+  ]
+})
+```
+**Use:**
+- You don't have to setup the initial view (`this.$zircle.setView('you-initial-view')`), because the views are handled by the router.
+
+- There is no need to add the components in `$options.components`, but you need to use [named route](https://router.vuejs.org/guide/essentials/named-routes.html)
+
+- Now the router will render the view that is in the route. Tough the previous views will not be rendered. To avoid loose of context you can add a conditional z-spot button with a fallback view(eg: `home`)
+
+- In case you use  `dynamic routes` you should add an `in-component guard` as is described in the [Vue-router documentation](https://router.vuejs.org/guide/advanced/navigation-guards.html#in-component-guards)
+
+- See [this example](#) with the new implementation of the vue-router on zircle-ui
+
+**Current limitations:**
+- Go forward using browser navigation buttons
+- Using routes with queries
 :::
 
-## For Browser or code sandboxes.
+## Setup for Browser or code sandboxes.
 
 ### Installing Vue-Router
 
@@ -59,21 +86,22 @@ Add vue-router using a `<script>` tag
   const bar = {
     template: `<z-view>Bar View</z-view>`
   }
-  // Vue Router configuration (You can ommit the routes definition)
-  const router = new VueRouter()
+  
+  const router = new VueRouter({
+    routes: [
+      { path: '/', redirect: '/foo' },
+      { path: '/foo', name: 'foo', component: foo },
+      { path: '/bar', name: 'bar', component: bar }
+    ]
+  })
 
   new Vue({
     el: '#app',
-    components: {
-      foo,
-      bar
-    },
     router,
     mounted() {
       this.$zircle.config({
         router
       })
-      this.$zircle.setView('foo')
     }
   })
   </script>
@@ -134,19 +162,20 @@ import foo from '/components/foo'
 import bar from '/components/bar'
 Vue.use(Router)
 
-const router = new Router({})
+const router = new Router({
+    routes: [
+      { path: '/', redirect: '/foo' },
+      { path: '/foo', name: 'foo', component: foo },
+      { path: '/bar', name: 'bar', component: bar }
+    ]
+  })
 
 export default {
-  components: {
-    foo,
-    bar
-  },
   router,
   mounted () {
     this.$zircle.config({
         router
       })
-    this.$zircle.setView('foo')
   }
 }
 </script>
