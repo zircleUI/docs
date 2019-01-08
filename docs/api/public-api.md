@@ -14,7 +14,7 @@ You can call three action to control **zircle-ui**:
 
 - **Usage:**
 
-You need to use `setView` to set the initial view name of your application. If you forget to set the initial view, no view will be shown.
+In case you don't use router you need to use `setView` to set the initial view name of your application. If you forget to set the initial view, no view will be shown. On the contrary, if you use vue-router the initial view is handled by itself.
 
 Use setView in the mounted hook. Chosse the name of your defined views. It is case insensitive.
 
