@@ -6,7 +6,7 @@ You can use **zircle-ui** with [Vue-Router](https://router.vuejs.org/) in any en
 
 **Breaking change:**
 
-Up to **zircle-ui v.1.2.2** the routes were handled automatically based on your views. However, the functionality of the router was pretty limited [https://github.com/zircleUI/zircleUI/issues/19](#19). From  **zircle-ui v.1.2.3** most of the caveats were eliminated. However, you need to define the routes in your Vue router.
+Up to **zircle-ui v.1.2.2** the routes were handled automatically based on your views. However, the functionality of the router was pretty limited ([see issue #19](https://github.com/zircleUI/zircleUI/issues/19)). From  **zircle-ui v.1.2.3** most of the caveats were eliminated. However, you need to define the routes in your Vue router.
 ```
 const router = new Router({
   routes: [
@@ -27,7 +27,7 @@ const router = new Router({
 
 - In case you use  `dynamic routes` you should add an `in-component guard` as is described in the [Vue-router documentation](https://router.vuejs.org/guide/advanced/navigation-guards.html#in-component-guards)
 
-- See [this example](#) with the new implementation of the vue-router on zircle-ui
+- See [**this example**](https://codepen.io/zircle/pen/WLyqKz) with the new implementation of the vue-router on zircle-ui.
 
 **Current limitations:**
 - Go forward using browser navigation buttons
@@ -110,7 +110,7 @@ Add vue-router using a `<script>` tag
 ```
 Check this demo in [Codepen](https://codepen.io/zircle/pen/xmzoEB) 
 
-For olvder versions in [Codepen](https://codepen.io/zircle/pen/RxvzVa) 
+For older versions in [Codepen](https://codepen.io/zircle/pen/RxvzVa) 
 
 #### See: 
 - [**z-canvas**](/api/z-canvas.html)
