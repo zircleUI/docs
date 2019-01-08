@@ -108,7 +108,9 @@ Add vue-router using a `<script>` tag
   </body>
 </html>
 ```
-Check this demo in [Codepen](https://codepen.io/zircle/pen/RxvzVa) 
+Check this demo in [Codepen](https://codepen.io/zircle/pen/xmzoEB) 
+
+For olvder versions in [Codepen](https://codepen.io/zircle/pen/RxvzVa) 
 
 #### See: 
 - [**z-canvas**](/api/z-canvas.html)
