@@ -43,7 +43,7 @@ data () {
     <z-spot
       button
       slot="extension"
-      :angle=45'
+      :angle=45
       size='small'
       @click.native='dialog = false'>
       Close
