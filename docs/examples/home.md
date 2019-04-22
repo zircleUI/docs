@@ -5,4 +5,6 @@
 
 ::: tip
 This example is the outcome of the [tutorial](/tutorial/)
+
+You can see the repo at https://github.com/zircleUI/smarthome-tutorial
 :::
