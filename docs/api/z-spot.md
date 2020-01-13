@@ -32,7 +32,7 @@ In certain occasions you may need to perfom a programmatic navigation to zoom-in
 
 Since **zircle-ui v.1.1.0** it's possible thanks to `toView` action (a sintax sugar of `setView`).
 
-Regarding its ussage you have to possible options. **One**, you can point the name of your defined view. In those cases the next view will appear in the center of the screen, because it doesn't have a initial `z-spot` to take the starting position as reference.
+Regarding its usage you have two possible options. **One**, you can point the name of your defined view. In those cases the next view will appear in the center of the screen, because it doesn't have an initial `z-spot` to take the starting position as reference.
 
 ``` js
 export default {
@@ -107,11 +107,11 @@ export default {
 ### Positioning
 `z-spot` is positionated according its parent component (a `z-view`or a `z-spot`). Having that in mind, you need to use two properties: `angle` and `distance`.
 
-To precise an `angle` put any value between 0 and 360 degrees (also, could be a negative degree). See the diagram provided.
+To specify an `angle`, put any value between 0 and 360 degrees (degree could also be a negative number). See the diagram provided.
 
 <img :src="$withBase('/angles.png')" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
 
-The `distance`  is a numeric value that represent the percentage of distance from the parent component. By default the `z-spot` has the 100% of distance. That it means that the center of the `z-spot` is placed exactly in the tangent of the parent component. 
+The `distance` is a numeric value that represent the percentage of distance from the parent component. By default the `z-spot` has the 100% of distance. This means that the center of the `z-spot` is placed exactly in the tangent of the parent component. 
 
 ### Modifying the size
 By default the diameter of the `z-spot` is `medium`. To change it, simply use the property `size` with any of the following values: 
