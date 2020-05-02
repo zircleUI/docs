@@ -1,6 +1,6 @@
 # Github trending plus
 
-> ## Announce
+> ## Announcement
 > I'm currently working on **Zumly**, which is a step forward to create zoomable web apps.
 > **Zumly** is an open source project, but will remain private until it reaches a certain degree of maturity.
 >
