@@ -1,5 +1,11 @@
 # Using Vue-Router
 
+> ## Announce
+> I'm currently working on **Zumly**, which is a step forward to create zoomable web apps.
+> **Zumly** is an open source project, but will remain private until it reaches a certain degree of maturity.
+>
+> In the meantime, [you can be one of the first to try **Zumly** by joining our mailing list](https://zumly.org). You will receive betas and guides to play with it!
+
 You can use **zircle-ui** with [Vue-Router](https://router.vuejs.org/) in any environment (from sandbox to vue-cli). 
 
 ::: tip

@@ -1,5 +1,12 @@
 # Introduction
 
+> ## Announce
+> I'm currently working on **Zumly**, which is a step forward to create zoomable web apps.
+> **Zumly** is an open source project, but will remain private until it reaches a certain degree of maturity.
+>
+> In the meantime, [you can be one of the first to try **Zumly** by joining our mailing list](https://zumly.org). You will receive betas and guides to play with it!
+
+
 In this tutorial, we are going to create a **simple dashboard for a smart home app**. By the end, you should have a basic understanding of **zircle-ui**. Have in mind that the dashboard is designed just for learning purposes and is not meant to be ready for production.
 
 Some previous knowledge of [**vue.js**](https://vuejs.org) is recommended for this tutorial.

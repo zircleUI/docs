@@ -1,5 +1,12 @@
 # Migration guide
 
+> ## Announce
+> I'm currently working on **Zumly**, which is a step forward to create zoomable web apps.
+> **Zumly** is an open source project, but will remain private until it reaches a certain degree of maturity.
+>
+> In the meantime, [you can be one of the first to try **Zumly** by joining our mailing list](https://zumly.org). You will receive betas and guides to play with it!
+
+
 With the release of **zircle-ui 0.9.0** many internal and external things have changed. As a result **zircle-ui** is now more intuitive and easy to use.
 
 Following this brief migration guide it will be easy for you to adatp your project to the new version of **zircle-ui**.

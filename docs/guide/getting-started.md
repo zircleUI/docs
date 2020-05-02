@@ -1,5 +1,12 @@
 # Getting Started
 
+> ## Announce
+> I'm currently working on **Zumly**, which is a step forward to create zoomable web apps.
+> **Zumly** is an open source project, but will remain private until it reaches a certain degree of maturity.
+>
+> In the meantime, [you can be one of the first to try **Zumly** by joining our mailing list](https://zumly.org). You will receive betas and guides to play with it!
+
+
 ::: tip
 The guide assumes intermediate level knowledge of HTML, CSS, JavaScript and Vue.js. To start learning Vue.js I suggest its [official documentation site](https://vuejs.org) 
 :::
