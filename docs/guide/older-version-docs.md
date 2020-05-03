@@ -38,7 +38,7 @@ I'm currently working on **Zumly**, which is a step forward to create zoomable w
 
 More information at [zumly.org](https://zumly.org)
 
-:::antime, [you can be one of the first to try **Zumly** by joining our mailing list](https://zumly.org). You will receive betas and guides to play with it!
+:::
 
 
 The documentation for **zircle-ui 0.3.3** is available [on Github](https://github.com/zircleUI/docs/tree/master/older-docs/0.3.3)
