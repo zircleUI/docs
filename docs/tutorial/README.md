@@ -2,11 +2,7 @@
 
 ::: tip
 
-## Announcement
-
-I'm currently working on **Zumly**, which is a step forward to create zoomable web apps.
-**Zumly** is an open source project, but will remain private until it reaches a certain degree of maturity.
-In the meantime, you can be one of the first to try **Zumly** by joining our mailing list. You will receive betas and guides to play with it!
+I'm currently working on **Zumly**, which is a step forward to create zoomable web apps. You can be one of the first to try **Zumly** by joining our mailing list.
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -38,6 +34,8 @@ In the meantime, you can be one of the first to try **Zumly** by joining our mai
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
+
+
 :::
 
 In this tutorial, we are going to create a **simple dashboard for a smart home app**. By the end, you should have a basic understanding of **zircle-ui**. Have in mind that the dashboard is designed just for learning purposes and is not meant to be ready for production.
