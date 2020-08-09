@@ -2,9 +2,9 @@
 
 ::: tip
 
-**Zumly**, a new zooming UI library, is now public at [https://github.com/zumly/zumly](https://github.com/zumly/zumly)
+I've been working on a new zooming library.
 
-Give a try!
+Give **Zumly** a try and joing our community at [https://zumly.org](https://zumly.org)
 
 :::
 
