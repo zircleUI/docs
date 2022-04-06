@@ -49,7 +49,7 @@ export default {
   /* ... */
     this.$zircle.toView({
       to: 'name of the new view' // string. Required,
-      fromSpot: reference-of-the-z-spot // Optional,
+      fromSpot: reference-of-the-z-spot // Vue [**ref / $refs**](https://vuejs.org/v2/api/#ref), Required
       params: { your params } // object. Optional
     })  
   /* ... */
