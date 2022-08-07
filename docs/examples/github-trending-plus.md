@@ -41,7 +41,7 @@ More information at [zumly.org](https://zumly.org)
 :::
 
 
-<iframe height='600' scrolling='no' title='Github trending plus by zircle' src='//github-trending-plus.surge.sh' frameborder='1' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+<iframe height='600' scrolling='no' title='Github trending plus by zircle' src='https://github-trending-plus.netlify.app' frameborder='1' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 ::: tip
