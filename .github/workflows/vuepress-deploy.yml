@@ -11,7 +11,7 @@ jobs:
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: username/repo
-        TARGET_BRANCH: master
-        BUILD_SCRIPT: yarn && yarn build
-        BUILD_DIR: blog/.vuepress/dist/
+        TARGET_REPO: zircleUI/docs
+        TARGET_BRANCH: gh_pages
+        BUILD_SCRIPT: yarn && yarn docs:build
+        BUILD_DIR: doc/.vuepress/dist/
