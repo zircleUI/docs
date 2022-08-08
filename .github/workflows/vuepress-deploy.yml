@@ -14,4 +14,4 @@ jobs:
         TARGET_REPO: zircleUI/docs
         TARGET_BRANCH: gh_pages
         BUILD_SCRIPT: yarn && yarn docs:build
-        BUILD_DIR: doc/.vuepress/dist/
+        BUILD_DIR: docs/.vuepress/dist/
