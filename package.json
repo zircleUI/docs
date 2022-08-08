@@ -6,6 +6,9 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
+  "dependencies": {
+    "vuepress": "0.11"
+  },
   "author": "Martin Muda",
   "license": "MIT"
 }
