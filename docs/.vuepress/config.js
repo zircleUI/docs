@@ -55,7 +55,7 @@ module.exports = {
       },
       {
         text: 'Examples',
-        link: '/examples/github-trending-plus'
+        link: '/examples/earth'
       },
       {
         text: 'Contributing',
@@ -174,6 +174,7 @@ module.exports = {
           title: '',
           collapsable: false,
           children: [
+            'earth',
             'github-trending-plus',
             'home',
             'vuejs-ecosystem',
