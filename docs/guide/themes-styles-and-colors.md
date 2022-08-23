@@ -76,8 +76,8 @@ The styles are:
 - `.danger`
 
 
-## Changing up themes and modes
-By default the preseted **theme** is *black* and the **theme mode**  *dark*. You can set up your prefered theme and theme mode using the **zircle-ui** action `config()` 
+## Changing up themes, modes and shapes
+By default the preseted **theme** is *black*, the **theme mode** is *dark* and the **shape** is *circle*. You can set up your prefered theme and theme mode using the **zircle-ui** action `config()` 
 
 ```js
 new Vue({
@@ -86,7 +86,8 @@ new Vue({
     this.$zircle.config({
       style: {
         theme: 'red',
-        mode: 'light-filled'
+        mode: 'light-filled',
+        shape: 'square'
       }
     })
   }
