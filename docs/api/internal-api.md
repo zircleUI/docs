@@ -74,11 +74,11 @@ calculates the position of the nested components of a view
 - **Descriptipn**
 Returns the value of a prop.size provided (e.g: 'small' => 140).
 
-### getDimensions()
-Recalculates the props.size of the components according the viewport when a resize event is detected. In case the app is in emedded mode, it will detect the canvas's width.
-
-### getAppMode()
-Returns the current app mode. **full** or **mixed**.
+### updateDiameters()
+Recalculates the props.size of the components according the viewport when a resize event is detected. 
+In case the app is in emedded mode, it will detect the canvas's width
+If the app uses percentage sizes, it will use the canvas's width to determine the width of the new components.
+In all cases, an adjustment of the width will be made according to the window.devicePixelRatio. This corrects positioning issues related to the OS scale and browser zoom.
 
 ## List API
 ### setPages(value)
