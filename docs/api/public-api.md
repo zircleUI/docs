@@ -66,7 +66,7 @@ export default {
   /* ... */
     this.$zircle.toView({
       to: 'name of the new view' // string. Required,
-      fromSpot: 'reference of the z-spot' // Optional,
+      fromSpot: 'reference of the z-spot' // Required,
       params: { your params } // Optional
     })  
   /* ... */
@@ -86,7 +86,7 @@ export default {
 - **Usage:**
 `config` is optional. Just in case you want to modify the default values of the appiclation or in case you are using router.
 
-```js{4,5,6,7,8,9,10,11,12}
+```js{4,5,6,7,8,9,10,11,12,13,14,15}
 export default {
   /* ... */
   mounted() {
@@ -94,10 +94,30 @@ export default {
       mode:'full',
       style: {
         theme: 'black',
-        mode: 'dark'
+        mode: 'dark',
+        shape: 'circle'
       },
       router: router,
-      debug: false 
+      debug: false,
+      usePercentSizes: true,
+      percentSizes: {
+        xxl: 30,
+        xl: 20,
+        l: 16,
+        m: 8,
+        s: 6,
+        xs: 4,
+        xxs: 2
+      },
+      minSizesInPixels: {
+        xxl: 180,
+        xl: 150,
+        l: 100,
+        m: 80,
+        s: 50,
+        xs: 30,
+        xxs: 20
+      }
     })
   }
 }
@@ -107,9 +127,12 @@ export default {
 | Option | Type | Default value | Description
 | :--- | :--- | :--- | :--- | :--- |
 | `mode` | String | full | The default value is **'full'** to use Zircle in a full mode. In case you want to include Zircle in other application use **'mixed'**.
-| `style` | Object | theme: 'black', mode: 'dark' | You can change the general look and feel of your application modifying **theme** and **color**. The complete list of themes and color included in zircle-ui can be found [here](/guide/themes-styles-and-colors.html)
+| `style` | Object | theme: 'black', mode: 'dark', shape: 'circle' | You can change the general look and feel of your application modifying **theme**, **color** and **shape**. The complete list of themes and color included in zircle-ui can be found [here](/guide/themes-styles-and-colors.html)
 | `router` | Object | --- | In case your application uses **vue-router** just pass the created router here. For more information about using **vue-router** with zircle [here](/guide/using-vue-router.html)
 | `debug` | Boolean | false | Debug is disabled by default. If you want to see and config a detailed zircle's log [here](/api/internal-api.html#debug-api)
+| `usePercentSizes` | Boolean | false | Percent sizes are disabled by default. Enable it use **percentSizes** property to determine your components sizes
+| `percentSizes` | Object | { xxl: 30, xl: 20, l: 16, m: 8, s: 6, xs: 4, xxs: 2 } | The size of your components in percentage, depending on the container's size 
+| `minSizesInPixels` | Object | { xxl: 180, xl: 150, l: 100, m: 80, s: 50, xs: 30, xxs: 20 } | The size of your components in percentage, depending on the container's size 
 
 ::: tip
   With **'mixed'** mode you need to define the size of the `z-canvas` (v.g `style="width: 40%; height: 500px;"`). zircle-ui will adapt its views and components taking into account the size of the `z-canvas`, not the `browser viewport`
@@ -140,6 +163,18 @@ Returns the current app theme mode.
 - **Usage:**
 
 You need to use `getParams` to retrieve the params that were passed in the property `toView` of a `z-spot`.
+
+## isUsingPercentSizes()
+
+- **Usage:**
+
+You need to use `isUsingPercentSizes` to retrieve the current **usePercentSizes** value of the state
+
+## resetConfig()
+
+- **Usage:**
+
+You need to use `resetConfig` to reset all the state values to their initial values and thus completely reinitialize zircle
 
 ``` js{4}
 export default {
